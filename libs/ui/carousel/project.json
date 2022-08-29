@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/ui/carousel/src",
+  "prefix": "olympia-kosiv-nx",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui/carousel"],
+      "options": {
+        "jestConfig": "libs/ui/carousel/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/carousel/**/*.ts",
+          "libs/ui/carousel/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

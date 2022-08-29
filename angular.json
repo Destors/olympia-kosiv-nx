@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
-    "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e"
+    "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",
+    "ui-carousel": "libs/ui/carousel",
+    "ui-image": "libs/ui/image"
   }
 }
