@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from './layout/layout.component';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { LayoutComponent } from './layout/layout.component';
+
 @NgModule({
-  imports: [CommonModule, RouterModule],
   declarations: [LayoutComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [LayoutComponent, RouterModule],
 })
-export class UiLayoutModule { }
+export class UiLayoutModule {}
