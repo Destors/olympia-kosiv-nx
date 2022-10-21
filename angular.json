@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "core-navigation-common": "libs/core/navigation/common",
     "landing-home-page": "libs/landing/home-page",
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
     "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",
