@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@olympia-kosiv-nx/landing/home-page": [
+        "libs/landing/home-page/src/index.ts"
+      ],
       "@olympia-kosiv-nx/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@olympia-kosiv-nx/ui/container": ["libs/ui/container/src/index.ts"],
       "@olympia-kosiv-nx/ui/image": ["libs/ui/image/src/index.ts"]
