@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UiLayoutModule } from '@olympia-kosiv-nx/ui/layout';
 import { NAVIGATION_PATHS } from 'libs/core/navigation/common/src/lib/navigation.interface';
-import { HomePageComponent } from 'libs/landing/home-page/src/lib/home-page/home-page.component';
 import { LayoutComponent } from 'libs/ui/layout/src/lib/layout/layout.component';
 
 const routes: Routes = [
@@ -11,14 +11,17 @@ const routes: Routes = [
     children: [
       {
         path: NAVIGATION_PATHS.home,
-        component: HomePageComponent,
+        loadChildren: () =>
+          import(
+            '../../../../libs/landing/home-page/src/lib/landing-home-page.module'
+          ).then((m) => m.LandingHomePageModule),
       },
     ],
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), UiLayoutModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
