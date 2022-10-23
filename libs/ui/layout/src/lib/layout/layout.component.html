@@ -1,7 +1,7 @@
 <ng-container [ngSwitch]="layoutType$ | async">
   <ng-container *ngSwitchDefault>
     <div>
-      <!-- header -->
+      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
       <main automation-id="handset">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
@@ -17,7 +17,7 @@
     </main>
   </ng-container>
   <ng-container *ngSwitchCase="breakpoints.Web">
-    <!-- header -->
+    <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
     <main automation-id="web">
       <ng-container *ngTemplateOutlet="template"></ng-container>
     </main>
