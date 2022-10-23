@@ -1,0 +1,22 @@
+.mainHeader {
+  min-height: 80vh;
+  background-image: url('../../../../../../apps/olympia-kosiv-web/src/assets/landing/img/mainHeader3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: darkslategrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .main-header--title-white {
+    color: white;
+    font-weight: 900;
+    font-size: 3.8rem;
+    line-height: normal;
+  }
+  .main-header--block {
+    max-width: 50vw;
+  }
+  button {
+    font-size: 20px;
+  }
+}

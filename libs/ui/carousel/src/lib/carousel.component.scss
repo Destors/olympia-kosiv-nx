@@ -12,7 +12,7 @@
 :host {
   display: block;
   position: relative;
-  height: 20rem;
+  min-height: 100%;
 
   @include store-mixins.media-web() {
     height: 25rem;
