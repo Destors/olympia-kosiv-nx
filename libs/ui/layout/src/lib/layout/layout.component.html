@@ -1,4 +1,34 @@
-<p>layout works!</p>
-<olympia-kosiv-nx-container
-  ><router-outlet></router-outlet
-></olympia-kosiv-nx-container>
+<ng-container [ngSwitch]="layoutType$ | async">
+  <ng-container *ngSwitchDefault>
+    <div>
+      <!-- header -->
+      <main automation-id="handset">
+        <ng-container *ngTemplateOutlet="template"></ng-container>
+      </main>
+    </div>
+    <!-- menu -->
+  </ng-container>
+  <ng-container *ngSwitchCase="breakpoints.Tablet">
+    <!-- sidebar -->
+    <main automation-id="tablet">
+      <ng-container
+        *ngTemplateOutlet="template; context: { mode: 'fluid' }"
+      ></ng-container>
+    </main>
+  </ng-container>
+  <ng-container *ngSwitchCase="breakpoints.Web">
+    <!-- header -->
+    <main automation-id="web">
+      <ng-container *ngTemplateOutlet="template"></ng-container>
+    </main>
+    <!-- footer -->
+  </ng-container>
+</ng-container>
+
+<ng-template #template let-mode="mode">
+  <router-outlet name="top"></router-outlet>
+  <olympia-kosiv-nx-container
+    ><router-outlet></router-outlet
+  ></olympia-kosiv-nx-container>
+  <router-outlet name="bottom"></router-outlet>
+</ng-template>
