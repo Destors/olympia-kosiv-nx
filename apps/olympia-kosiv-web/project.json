@@ -1,4 +1,5 @@
 {
+  "name": "olympia-kosiv-web",
   "projectType": "application",
   "sourceRoot": "apps/olympia-kosiv-web/src",
   "prefix": "olympia-kosiv-nx",

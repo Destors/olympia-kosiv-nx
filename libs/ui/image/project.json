@@ -1,4 +1,5 @@
 {
+  "name": "ui-image",
   "projectType": "library",
   "sourceRoot": "libs/ui/image/src",
   "prefix": "olympia-kosiv-nx",

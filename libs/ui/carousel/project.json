@@ -1,4 +1,5 @@
 {
+  "name": "ui-carousel",
   "projectType": "library",
   "sourceRoot": "libs/ui/carousel/src",
   "prefix": "olympia-kosiv-nx",

@@ -1,4 +1,5 @@
 {
+  "name": "core-navigation-common",
   "projectType": "library",
   "sourceRoot": "libs/core/navigation/common/src",
   "prefix": "olympia-kosiv-nx",

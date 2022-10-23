@@ -1,4 +1,5 @@
 {
+  "name": "ui-container",
   "projectType": "library",
   "sourceRoot": "libs/ui/container/src",
   "prefix": "olympia-kosiv-nx",

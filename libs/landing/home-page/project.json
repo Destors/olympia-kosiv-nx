@@ -1,4 +1,5 @@
 {
+  "name": "landing-home-page",
   "projectType": "library",
   "sourceRoot": "libs/landing/home-page/src",
   "prefix": "olympia-kosiv-nx",
