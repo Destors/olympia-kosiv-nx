@@ -9,7 +9,7 @@
     <!-- menu -->
   </ng-container>
   <ng-container *ngSwitchCase="breakpoints.Tablet">
-    <!-- sidebar -->
+    <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
     <main automation-id="tablet">
       <ng-container
         *ngTemplateOutlet="template; context: { mode: 'fluid' }"
