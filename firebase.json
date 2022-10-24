@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/olympia-kosiv",
+    "public": "dist/apps/olympia-kosiv-web",
     "ignore": [
       "firebase.json",
       "**/.*",
