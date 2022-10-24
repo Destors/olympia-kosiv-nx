@@ -27,6 +27,9 @@
       "@olympia-kosiv-nx/landing/price-page": [
         "libs/landing/price-page/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/price-page/api": [
+        "libs/landing/price-page/api/src/index.ts"
+      ],
       "@olympia-kosiv-nx/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@olympia-kosiv-nx/ui/container": ["libs/ui/container/src/index.ts"],
       "@olympia-kosiv-nx/ui/image": ["libs/ui/image/src/index.ts"],
