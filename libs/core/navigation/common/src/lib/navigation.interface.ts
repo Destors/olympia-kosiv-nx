@@ -1,11 +1,15 @@
-import { InjectionToken } from "@angular/core";
+import { InjectionToken } from '@angular/core';
 
 export interface NavigationPaths {
-    home: string;
+  home: string;
+  price: string;
 }
 
 export const NAVIGATION_PATHS: NavigationPaths = {
-    home: '',
+  home: '',
+  price: 'price',
 };
 
-export const PATHS = new InjectionToken<Record<string, string>>('NAVIGATION_PATHS');
+export const PATHS = new InjectionToken<Record<string, string>>(
+  'NAVIGATION_PATHS'
+);
