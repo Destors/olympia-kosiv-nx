@@ -5,6 +5,7 @@
     "core-layout-service": "libs/core/layout/service",
     "core-navigation-common": "libs/core/navigation/common",
     "landing-home-page": "libs/landing/home-page",
+    "landing-price-page": "libs/landing/price-page",
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
     "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",
     "ui-carousel": "libs/ui/carousel",

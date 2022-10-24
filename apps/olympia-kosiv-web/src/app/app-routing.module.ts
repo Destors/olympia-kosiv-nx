@@ -16,6 +16,13 @@ const routes: Routes = [
             '../../../../libs/landing/home-page/src/lib/landing-home-page.module'
           ).then((m) => m.LandingHomePageModule),
       },
+      {
+        path: NAVIGATION_PATHS.price,
+        loadChildren: () =>
+          import(
+            '../../../../libs/landing/price-page/src/lib/landing-price-page.module'
+          ).then((m) => m.LandingPricePageModule),
+      },
     ],
   },
 ];
