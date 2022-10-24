@@ -31,6 +31,7 @@
     "eslint-plugin-ngrx": "^2.1.4",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "firebase": "^9.12.1",
     "hammerjs": "^2.0.8",
     "ng-mocks": "^14.1.3",
     "rxjs": "~7.5.0",
