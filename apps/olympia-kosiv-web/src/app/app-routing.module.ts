@@ -20,8 +20,8 @@ const routes: Routes = [
         path: NAVIGATION_PATHS.price,
         loadChildren: () =>
           import(
-            '../../../../libs/landing/price-page/src/lib/landing-price-page.module'
-          ).then((m) => m.LandingPricePageModule),
+            '../../../../libs/landing/price-page/ui/page/src/lib/landing-price-page-ui-page.module'
+          ).then((m) => m.LandingPricePageUiPageModule),
       },
     ],
   },

@@ -13,4 +13,4 @@ import { PricePageComponent } from './price-page/price-page.component';
   ],
   declarations: [PricePageComponent],
 })
-export class LandingPricePageModule {}
+export class LandingPricePageUiPageModule {}

@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'landing-price-page-api',
-  preset: '../../../../jest.preset.js',
+  displayName: 'landing-price-page-ui-page',
+  preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../coverage/libs/landing/price-page/api',
+  coverageDirectory: '../../../../../coverage/libs/landing/price-page/ui/page',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
