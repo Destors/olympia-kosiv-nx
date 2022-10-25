@@ -1,9 +1,21 @@
 import { Injectable } from '@angular/core';
+import {
+  AngularFirestore,
+  AngularFirestoreCollection,
+} from '@angular/fire/compat/firestore';
 
-@Injectable({
-  providedIn: 'root'
-})
+import { Prices } from '../../../common/src/lib/price-page-common.interface';
+
+@Injectable()
 export class PricePageApiService {
+  private dbPath = 'landing';
+  pricesRef: AngularFirestoreCollection<Prices>;
 
-  constructor() { }
+  constructor(private db: AngularFirestore) {
+    this.pricesRef = db.collection(this.dbPath);
+  }
+
+  getAll(): AngularFirestoreCollection<Prices> {
+    return this.pricesRef;
+  }
 }

@@ -1,1 +1,1 @@
-export * from './lib/landing-price-page-common.module';
+export * from './lib/price-page-common.interface';
