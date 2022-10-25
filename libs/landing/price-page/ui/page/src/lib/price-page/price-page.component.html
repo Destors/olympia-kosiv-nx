@@ -1,9 +1,8 @@
-<p>price-page works!</p>
-
-<ul>
-  <li *ngFor="let prices of prices$ | async">
-    {{ prices.name }} <br />
-    {{ prices.price }}<br />
-    {{ prices.desc }}
-  </li>
-</ul>
+<olympia-kosiv-nx-container>
+  <div class="card-list">
+    <ng-container *ngFor="let prices of prices$ | async">
+      <olympia-kosiv-nx-price-page-card
+        [price]="prices"
+      ></olympia-kosiv-nx-price-page-card
+    ></ng-container></div
+></olympia-kosiv-nx-container>

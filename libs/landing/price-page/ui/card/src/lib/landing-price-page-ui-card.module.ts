@@ -6,5 +6,6 @@ import { PricePageCardComponent } from './price-page-card/price-page-card.compon
 @NgModule({
   imports: [CommonModule],
   declarations: [PricePageCardComponent],
+  exports: [PricePageCardComponent],
 })
 export class LandingPricePageUiCardModule {}
