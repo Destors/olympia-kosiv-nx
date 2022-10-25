@@ -1,1 +1,1 @@
-export * from './lib/landing-price-page-api.module';
+export * from './lib/price-page-api.service';
