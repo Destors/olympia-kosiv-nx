@@ -1,8 +1,16 @@
 <olympia-kosiv-nx-container>
-  <div class="card-list">
-    <ng-container *ngFor="let prices of prices$ | async">
-      <olympia-kosiv-nx-price-page-card
-        [price]="prices"
-      ></olympia-kosiv-nx-price-page-card
-    ></ng-container></div
+  <div class="lead-logo">
+    <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
+    <p>Ознайомтесь зі списком наших абонементів</p>
+  </div>
+  <section>
+    <h2>Тренажерний зал:</h2>
+    <div class="card-list">
+      <ng-container *ngFor="let prices of prices$ | async">
+        <div class="card-list__item">
+          <olympia-kosiv-nx-price-page-card
+            [price]="prices"
+          ></olympia-kosiv-nx-price-page-card></div
+      ></ng-container>
+    </div></section
 ></olympia-kosiv-nx-container>
