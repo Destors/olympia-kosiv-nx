@@ -1,1 +1,9 @@
 <p>price-page works!</p>
+
+<ul>
+  <li *ngFor="let prices of prices$ | async">
+    {{ prices.name }} <br />
+    {{ prices.price }}<br />
+    {{ prices.desc }}
+  </li>
+</ul>
