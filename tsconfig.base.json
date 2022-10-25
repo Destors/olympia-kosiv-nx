@@ -30,6 +30,9 @@
       "@olympia-kosiv-nx/landing/price-page/common": [
         "libs/landing/price-page/common/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/price-page/ui/card": [
+        "libs/landing/price-page/ui/card/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/price-page/ui/page": [
         "libs/landing/price-page/ui/page/src/index.ts"
       ],
