@@ -6,6 +6,7 @@
     "core-navigation-common": "libs/core/navigation/common",
     "landing-home-page": "libs/landing/home-page",
     "landing-price-page-api": "libs/landing/price-page/api",
+    "landing-price-page-common": "libs/landing/price-page/common",
     "landing-price-page-ui-page": "libs/landing/price-page/ui/page",
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
     "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",
