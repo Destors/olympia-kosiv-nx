@@ -1,0 +1,14 @@
+olympia-kosiv-nx-nav-link {
+  a {
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+    &:hover {
+      color: gray;
+    }
+
+    &.is-active {
+      border-bottom: 1px solid gray;
+    }
+  }
+}
