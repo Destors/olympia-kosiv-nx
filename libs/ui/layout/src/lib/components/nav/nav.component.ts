@@ -9,12 +9,14 @@ export function getLinks(paths: NavigationPaths): NavigationLink[] {
   return [
     {
       route: paths.home,
+      label: 'Головна',
       routerLinkActiveOptions: {
         exact: true,
       },
     },
     {
       route: paths.price,
+      label: 'Ціни',
     },
   ];
 }
