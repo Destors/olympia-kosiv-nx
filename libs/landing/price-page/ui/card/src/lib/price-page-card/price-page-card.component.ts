@@ -9,6 +9,7 @@ import { Prices } from '@olympia-kosiv-nx/landing/price-page/common';
 })
 export class PricePageCardComponent {
   @Input() price!: Prices;
+  @Input() preloadingSkeleton!: boolean;
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}

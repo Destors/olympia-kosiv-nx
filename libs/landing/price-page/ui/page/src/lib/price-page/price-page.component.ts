@@ -10,14 +10,15 @@ import { Observable } from 'rxjs';
 })
 export class PricePageComponent implements OnInit {
   prices$ = new Observable<Prices[]>();
+  preloadingSkeleton = new Array(4);
 
   constructor(private pricePageService: PricePageApiService) {}
 
   ngOnInit() {
-    this.retrivePrices();
+    this.getPrices();
   }
 
-  retrivePrices() {
+  getPrices() {
     this.prices$ = this.pricePageService.getAll().valueChanges();
   }
 }
