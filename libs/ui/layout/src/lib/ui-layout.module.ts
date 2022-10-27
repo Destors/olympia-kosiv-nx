@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UiContainerModule } from '@olympia-kosiv-nx/ui/container';
 
-import { HeaderModule } from './header/header.module';
+import { HeaderModule } from './components/header/header.module';
 import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
