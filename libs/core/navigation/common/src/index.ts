@@ -1,1 +1,1 @@
-export * from './lib/core-navigation-common.module';
+export * from './lib/navigation.interface';

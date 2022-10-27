@@ -1,4 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import {
+  NavigationLink,
+  NavigationPaths,
+  PATHS,
+} from '@olympia-kosiv-nx/core/navigation/common';
+
+export function getLinks(paths: NavigationPaths): NavigationLink[] {
+  return [
+    {
+      route: paths.home,
+      routerLinkActiveOptions: {
+        exact: true,
+      },
+    },
+    {
+      route: paths.price,
+    },
+  ];
+}
 
 @Component({
   selector: 'olympia-kosiv-nx-nav',
@@ -6,7 +25,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 export class NavComponent implements OnInit {
-  constructor() {}
+  links!: NavigationLink[];
+  constructor(@Inject(PATHS) public readonly paths: NavigationPaths) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.links = getLinks(this.paths);
+  }
+
+  trackByFn(index: number, link: NavigationLink): string {
+    return link.route;
+  }
 }

@@ -1,1 +1,11 @@
-<olympia-kosiv-nx-nav-link></olympia-kosiv-nx-nav-link>
+<olympia-kosiv-nx-nav-link *ngFor="let link of links; trackBy: trackByFn"
+  ><a
+    #rla="routerLinkActive"
+    routerLinkActive
+    [class.is-active]="rla.isActive"
+    [routerLinkActiveOptions]="link.routerLinkActiveOptions || { exact: false }"
+    [routerLink]="link.route"
+  >
+    {{ link.route }}
+  </a></olympia-kosiv-nx-nav-link
+>

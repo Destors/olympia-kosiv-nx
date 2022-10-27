@@ -10,6 +10,12 @@ export const NAVIGATION_PATHS: NavigationPaths = {
   price: 'price',
 };
 
+export interface NavigationLink {
+  route: string;
+  params?: Record<string, string>;
+  routerLinkActiveOptions?: { exact: boolean };
+}
+
 export const PATHS = new InjectionToken<Record<string, string>>(
   'NAVIGATION_PATHS'
 );

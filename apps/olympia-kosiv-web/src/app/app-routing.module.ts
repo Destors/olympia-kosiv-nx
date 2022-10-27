@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UiLayoutModule } from '@olympia-kosiv-nx/ui/layout';
-import { NAVIGATION_PATHS } from 'libs/core/navigation/common/src/lib/navigation.interface';
-import { LayoutComponent } from 'libs/ui/layout/src/lib/layout/layout.component';
+import {
+  NAVIGATION_PATHS,
+  PATHS,
+} from '@olympia-kosiv-nx/core/navigation/common';
+import { LayoutComponent } from '@olympia-kosiv-nx/ui/layout';
 
 const routes: Routes = [
   {
@@ -12,23 +14,29 @@ const routes: Routes = [
       {
         path: NAVIGATION_PATHS.home,
         loadChildren: () =>
-          import(
-            '../../../../libs/landing/home-page/src/lib/landing-home-page.module'
-          ).then((m) => m.LandingHomePageModule),
+          import('@olympia-kosiv-nx/landing/home-page').then(
+            (m) => m.LandingHomePageModule
+          ),
       },
       {
         path: NAVIGATION_PATHS.price,
         loadChildren: () =>
-          import(
-            '../../../../libs/landing/price-page/ui/page/src/lib/landing-price-page-ui-page.module'
-          ).then((m) => m.LandingPricePageUiPageModule),
+          import('@olympia-kosiv-nx/landing/price-page/ui/page').then(
+            (m) => m.LandingPricePageUiPageModule
+          ),
       },
     ],
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), UiLayoutModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [
+    {
+      provide: PATHS,
+      useValue: NAVIGATION_PATHS,
+    },
+  ],
 })
 export class AppRoutingModule {}
