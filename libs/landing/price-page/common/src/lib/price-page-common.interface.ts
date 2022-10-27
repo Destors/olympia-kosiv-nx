@@ -1,6 +1,6 @@
 export interface Prices {
   name: string;
-  price: number;
+  price: number | string;
   desc: string;
   visits: number;
 }

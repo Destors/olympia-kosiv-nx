@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PricePageApiService } from '@olympia-kosiv-nx/landing/price-page/api';
 import { Prices } from '@olympia-kosiv-nx/landing/price-page/common';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 
 @Component({
   selector: 'olympia-kosiv-nx-price-page',
@@ -10,15 +10,24 @@ import { Observable } from 'rxjs';
 })
 export class PricePageComponent implements OnInit {
   prices$ = new Observable<Prices[]>();
+  mapedPrices$ = new Observable<Prices[]>();
+
   preloadingSkeletonCount = new Array(4);
 
   constructor(private pricePageService: PricePageApiService) {}
 
   ngOnInit() {
-    this.getPrices();
+    this.getAllPrices();
+    this.createMappedPrices();
   }
 
-  getPrices() {
+  getAllPrices() {
     this.prices$ = this.pricePageService.getAll().valueChanges();
+  }
+
+  createMappedPrices() {
+    this.mapedPrices$ = this.prices$.pipe(
+      map((val) => val.map((x) => ({ ...x, price: `${x.price} грн` })))
+    );
   }
 }
