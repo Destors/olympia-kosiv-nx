@@ -39,6 +39,9 @@
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/price/common": [
+        "libs/landing/price/common/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/price/page": [
         "libs/landing/price/page/src/index.ts"
       ],
