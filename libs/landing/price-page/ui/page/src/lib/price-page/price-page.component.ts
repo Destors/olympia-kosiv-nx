@@ -25,8 +25,8 @@ export class PricePageComponent implements OnInit {
     this.prices$ = this.pricePageService.getAll().valueChanges();
   }
 
-  createMappedPrices() {
-    this.mapedPrices$ = this.prices$.pipe(
+  createMappedPrices(): Observable<Prices[]> {
+    return this.mapedPrices$ = this.prices$.pipe(
       map((val) => val.map((x) => ({ ...x, price: `${x.price} грн` })))
     );
   }

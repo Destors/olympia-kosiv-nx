@@ -1,1 +1,15 @@
-<p>landing-price-ui-card works!</p>
+<ng-container *ngIf="preloadingSkeleton; else dataReady"
+  ><div class="card card--skeleton">
+    <h3 class="card__header">skeleton</h3>
+    <p class="card__price">skeleton</p>
+    <p class="card__desc">skeleton</p>
+  </div></ng-container
+>
+
+<ng-template #dataReady
+  ><div class="card">
+    <h3 class="card__header">{{ price.name }}</h3>
+    <p class="card__price">{{ price.price }}</p>
+    <p class="card__desc">{{ price.desc }}</p>
+  </div></ng-template
+>

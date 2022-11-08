@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Prices } from '@olympia-kosiv-nx/landing/price-page/common';
+import { Prices } from '@olympia-kosiv-nx/landing/price/common';
 
 @Component({
   selector: 'olympia-kosiv-nx-price-page-card',

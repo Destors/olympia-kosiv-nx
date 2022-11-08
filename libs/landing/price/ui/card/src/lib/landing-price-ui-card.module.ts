@@ -6,5 +6,6 @@ import { LandingPriceUiCardComponent } from './landing-price-ui-card.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [LandingPriceUiCardComponent],
+  exports: [LandingPriceUiCardComponent],
 })
 export class LandingPriceUiCardModule {}
