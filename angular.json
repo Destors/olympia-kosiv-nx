@@ -8,7 +8,6 @@
     "landing-price-api": "libs/landing/price/api",
     "landing-price-common": "libs/landing/price/common",
     "landing-price-page": "libs/landing/price/page",
-    "landing-price-page-api": "libs/landing/price-page/api",
     "landing-price-ui-card": "libs/landing/price/ui/card",
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
     "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",

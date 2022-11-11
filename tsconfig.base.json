@@ -24,18 +24,6 @@
       "@olympia-kosiv-nx/landing/home-page": [
         "libs/landing/home-page/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/price-page/api": [
-        "libs/landing/price-page/api/src/index.ts"
-      ],
-      "@olympia-kosiv-nx/landing/price-page/common": [
-        "libs/landing/price-page/common/src/index.ts"
-      ],
-      "@olympia-kosiv-nx/landing/price-page/ui/card": [
-        "libs/landing/price-page/ui/card/src/index.ts"
-      ],
-      "@olympia-kosiv-nx/landing/price-page/ui/page": [
-        "libs/landing/price-page/ui/page/src/index.ts"
-      ],
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],
