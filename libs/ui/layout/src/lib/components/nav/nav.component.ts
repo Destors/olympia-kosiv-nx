@@ -18,6 +18,10 @@ export function getLinks(paths: NavigationPaths): NavigationLink[] {
       route: paths.price,
       label: 'Ціни',
     },
+    {
+      route: paths.contact,
+      label: 'Контакти',
+    },
   ];
 }
 

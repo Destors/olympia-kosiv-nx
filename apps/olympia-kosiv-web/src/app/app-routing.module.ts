@@ -25,6 +25,13 @@ const routes: Routes = [
             (m) => m.LandingPricePageModule
           ),
       },
+      {
+        path: NAVIGATION_PATHS.contact,
+        loadChildren: () =>
+          import('@olympia-kosiv-nx/landing/contact/page').then(
+            (m) => m.LandingContactPageModule
+          ),
+      },
     ],
   },
 ];

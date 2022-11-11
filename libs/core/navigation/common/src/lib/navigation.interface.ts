@@ -3,13 +3,13 @@ import { InjectionToken } from '@angular/core';
 export interface NavigationPaths {
   home: string;
   price: string;
-  contacts: string;
+  contact: string;
 }
 
 export const NAVIGATION_PATHS: NavigationPaths = {
   home: '',
   price: 'price',
-  contacts: 'contacts',
+  contact: 'contact',
 };
 
 export interface NavigationLink {
