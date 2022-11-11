@@ -1,1 +1,29 @@
-<p>landing-price-page works!</p>
+<olympia-kosiv-nx-container>
+  <div class="lead-logo">
+    <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
+    <p>Ознайомтесь зі списком наших абонементів</p>
+  </div>
+  <section>
+    <h2>Тренажерний зал:</h2>
+    <ng-container *ngIf="mapedPrices$ | async as prices; else loadingPrices">
+      <div class="card-list">
+        <div class="card-list__item" *ngFor="let price of prices">
+          <olympia-kosiv-nx-landing-price-ui-card
+            [price]="price"
+          ></olympia-kosiv-nx-landing-price-ui-card>
+        </div></div
+    ></ng-container>
+
+    <ng-template #loadingPrices>
+      <div class="card-list">
+        <div
+          class="card-list__item"
+          *ngFor="let item of preloadingSkeletonCount"
+        >
+          <olympia-kosiv-nx-landing-price-ui-card
+            [preloadingSkeleton]="true"
+          ></olympia-kosiv-nx-landing-price-ui-card>
+        </div>
+      </div>
+    </ng-template></section
+></olympia-kosiv-nx-container>

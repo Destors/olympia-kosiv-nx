@@ -2,7 +2,6 @@ import {
   ChangeDetectionStrategy,
   Component,
   Input,
-  OnInit,
 } from '@angular/core';
 import { Prices } from '@olympia-kosiv-nx/landing/price/common';
 
@@ -12,10 +11,11 @@ import { Prices } from '@olympia-kosiv-nx/landing/price/common';
   styleUrls: ['./landing-price-ui-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LandingPriceUiCardComponent implements OnInit {
+export class LandingPriceUiCardComponent  {
   @Input() price!: Prices;
   @Input() preloadingSkeleton!: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 
-  ngOnInit(): void {}
+  
 }

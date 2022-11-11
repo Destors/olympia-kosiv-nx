@@ -21,8 +21,8 @@ const routes: Routes = [
       {
         path: NAVIGATION_PATHS.price,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/price-page/ui/page').then(
-            (m) => m.LandingPricePageUiPageModule
+          import('@olympia-kosiv-nx/landing/price/page').then(
+            (m) => m.LandingPricePageModule
           ),
       },
     ],
