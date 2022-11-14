@@ -14,7 +14,7 @@ const routes: Routes = [
       {
         path: NAVIGATION_PATHS.home,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/home-page').then(
+          import('@olympia-kosiv-nx/landing/home/page').then(
             (m) => m.LandingHomePageModule
           ),
       },
