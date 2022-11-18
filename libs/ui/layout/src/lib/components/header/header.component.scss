@@ -1,11 +1,16 @@
 header {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  color: white;
   & h1 {
     font-weight: 600;
     margin-bottom: 0;
+  }
+  & .main-logo {
+    font-size: 1.5rem;
   }
 }
 
@@ -13,8 +18,10 @@ header {
   display: flex;
   list-style: none;
   padding: 0;
+
   & li {
     margin: 0 10px;
+    color: white;
     .active {
       border-bottom: 2px black;
     }
@@ -22,6 +29,6 @@ header {
 }
 
 .nav-tel {
-  color: black;
+  color: white;
   text-decoration: none;
 }

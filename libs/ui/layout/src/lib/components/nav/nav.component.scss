@@ -2,13 +2,16 @@ olympia-kosiv-nx-nav-link {
   a {
     text-decoration: none;
     margin: 0px 5px;
-    color: black;
+    padding-bottom: 3px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
     &:hover {
       color: gray;
     }
 
     &.is-active {
-      border-bottom: 1px solid gray;
+      border-bottom: 2px solid white;
     }
   }
 }
