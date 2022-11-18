@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { ColumnModule } from './components/column/column.module';
+import { RowModule } from './components/row/row.module';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [ColumnModule, RowModule],
 })
 export class UiGridModule {}
