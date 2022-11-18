@@ -27,6 +27,9 @@
       "@olympia-kosiv-nx/landing/home/page": [
         "libs/landing/home/page/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/home/ui/advantages": [
+        "libs/landing/home/ui/advantages/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],

@@ -6,6 +6,7 @@
     "core-navigation-common": "libs/core/navigation/common",
     "landing-contact-page": "libs/landing/contact/page",
     "landing-home-page": "libs/landing/home/page",
+    "landing-home-ui-advantages": "libs/landing/home/ui/advantages",
     "landing-price-api": "libs/landing/price/api",
     "landing-price-common": "libs/landing/price/common",
     "landing-price-page": "libs/landing/price/page",
