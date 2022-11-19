@@ -1,12 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  HostBinding,
+  Input,
+} from '@angular/core';
 
 @Component({
   selector: 'olympia-kosiv-nx-row',
   templateUrl: './row.component.html',
   styleUrls: ['./row.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RowComponent implements OnInit {
-  constructor() {}
+export class RowComponent {
+  @Input() noPadding = false;
 
-  ngOnInit(): void {}
+  @HostBinding('class.no-padding') get isNoPadding(): boolean {
+    return this.noPadding;
+  }
 }
