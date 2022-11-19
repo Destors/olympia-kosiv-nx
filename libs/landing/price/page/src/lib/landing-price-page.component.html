@@ -6,24 +6,25 @@
   <section>
     <h2>Тренажерний зал:</h2>
     <ng-container *ngIf="prices$ | async as prices; else loadingPrices">
-      <div class="card-list">
-        <div class="card-list__item" *ngFor="let price of prices">
-          <olympia-kosiv-nx-landing-price-ui-card
+      <olympia-kosiv-nx-row tablet>
+        <olympia-kosiv-nx-column tablet="4" web="4" *ngFor="let price of prices"
+          ><olympia-kosiv-nx-landing-price-ui-card
             [price]="price"
-          ></olympia-kosiv-nx-landing-price-ui-card>
-        </div></div
-    ></ng-container>
+          ></olympia-kosiv-nx-landing-price-ui-card
+        ></olympia-kosiv-nx-column>
+      </olympia-kosiv-nx-row>
+    </ng-container>
 
     <ng-template #loadingPrices>
-      <div class="card-list">
-        <div
-          class="card-list__item"
+      <olympia-kosiv-nx-row tablet>
+        <olympia-kosiv-nx-column
+          tablet="6"
+          web="4"
           *ngFor="let item of preloadingSkeletonCount"
-        >
-          <olympia-kosiv-nx-landing-price-ui-card
+          ><olympia-kosiv-nx-landing-price-ui-card
             [preloadingSkeleton]="true"
-          ></olympia-kosiv-nx-landing-price-ui-card>
-        </div>
-      </div>
+          ></olympia-kosiv-nx-landing-price-ui-card
+        ></olympia-kosiv-nx-column>
+      </olympia-kosiv-nx-row>
     </ng-template></section
 ></olympia-kosiv-nx-container>
