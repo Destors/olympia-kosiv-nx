@@ -42,6 +42,9 @@
       "@olympia-kosiv-nx/landing/price/ui/card": [
         "libs/landing/price/ui/card/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/price/ui/pipes": [
+        "libs/landing/price/ui/pipes/src/index.ts"
+      ],
       "@olympia-kosiv-nx/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@olympia-kosiv-nx/ui/container": ["libs/ui/container/src/index.ts"],
       "@olympia-kosiv-nx/ui/grid": ["libs/ui/grid/src/index.ts"],

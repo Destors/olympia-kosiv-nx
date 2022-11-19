@@ -5,7 +5,7 @@
   </div>
   <section>
     <h2>Тренажерний зал:</h2>
-    <ng-container *ngIf="mapedPrices$ | async as prices; else loadingPrices">
+    <ng-container *ngIf="prices$ | async as prices; else loadingPrices">
       <div class="card-list">
         <div class="card-list__item" *ngFor="let price of prices">
           <olympia-kosiv-nx-landing-price-ui-card
