@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroModel } from '@olympia-kosiv-nx/landing/home/common';
+import { HeroModel, PositionType } from '@olympia-kosiv-nx/landing/home/common';
 
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-page',
@@ -8,10 +8,11 @@ import { HeroModel } from '@olympia-kosiv-nx/landing/home/common';
 })
 export class LandingHomePageComponent {
   heroTrainer: HeroModel;
+  positionType: typeof PositionType = PositionType;
 
   constructor() {
     this.heroTrainer = {
-      img: 'test',
+      img: '../assets/landing/img/heroTrainer.jpg',
       title: 'Персональні тренування',
       // eslint-disable-next-line max-len
       desc: 'Ви можете тренуватися самостійно або під наглядом профессійного тренера. Отримайте індивідеальний план тренування та харчування.',

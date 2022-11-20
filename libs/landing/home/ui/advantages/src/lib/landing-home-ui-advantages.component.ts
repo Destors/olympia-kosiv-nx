@@ -28,7 +28,7 @@ export class LandingHomeUiAdvantagesComponent {
       },
       {
         icon: 'svg',
-        title: 'Душ + Туалет',
+        title: 'Душ',
         desc: 'Після тренування ви можете відвідати горячий душ.',
       },
       {

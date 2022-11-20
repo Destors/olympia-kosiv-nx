@@ -6,6 +6,18 @@ p {
   font-size: 1.5 rem;
 }
 
-olympia-kosiv-nx-column .title-left {
+olympia-kosiv-nx-column {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+olympia-kosiv-nx-column.title-left {
   order: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
