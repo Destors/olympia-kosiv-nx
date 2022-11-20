@@ -24,6 +24,9 @@
       "@olympia-kosiv-nx/landing/contact/page": [
         "libs/landing/contact/page/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/home/common": [
+        "libs/landing/home/common/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/home/page": [
         "libs/landing/home/page/src/index.ts"
       ],

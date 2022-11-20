@@ -6,13 +6,9 @@
       *ngFor="let advCardsArr of advCards"
     >
       <li>
-        <div class="icon">
-          {{ advCardsArr.icon }}
-        </div>
-        <h3>{{ advCardsArr.title }}</h3>
-        <p>
-          {{ advCardsArr.desc }}
-        </p>
+        <olympia-kosiv-nx-landing-home-ui-advantages-card
+          [advCards]="advCardsArr"
+        ></olympia-kosiv-nx-landing-home-ui-advantages-card>
       </li>
     </olympia-kosiv-nx-column>
   </olympia-kosiv-nx-row>

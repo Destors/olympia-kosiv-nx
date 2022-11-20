@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
+import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
 
-export interface AdvCardModel {
-  icon: string;
-  title: string;
-  desc: string;
-}
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-ui-advantages',
   templateUrl: './landing-home-ui-advantages.component.html',
   styleUrls: ['./landing-home-ui-advantages.component.scss'],
 })
 export class LandingHomeUiAdvantagesComponent {
-  advCards = new Array<AdvCardModel>();
+  advCards = new Array<AdvantagesCard>();
 
   constructor() {
     this.advCards = [
