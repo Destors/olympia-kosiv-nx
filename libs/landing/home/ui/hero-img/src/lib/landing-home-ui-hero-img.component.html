@@ -1,0 +1,11 @@
+<olympia-kosiv-nx-row tablet>
+  <olympia-kosiv-nx-column tablet="6"
+    ><img src="{{ heroModel.img }}" alt=""
+  /></olympia-kosiv-nx-column>
+  <olympia-kosiv-nx-column
+    tablet="6"
+    [ngClass]="{ 'title-left': heroModel.titlePosition === 'left' }"
+    ><h2>{{ heroModel.title }}</h2>
+    <p>{{ heroModel.desc }}</p></olympia-kosiv-nx-column
+  >
+</olympia-kosiv-nx-row>
