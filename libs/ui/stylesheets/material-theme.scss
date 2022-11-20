@@ -30,6 +30,20 @@ $store-theme: mat.define-light-theme(
   )
 );
 
+$store-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $store-primary,
+      accent: $store-accent,
+      warn: $store-warn,
+    ),
+  )
+);
+
+.darkMode {
+  @include mat.all-component-colors($store-dark-theme);
+}
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
