@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@olympia-kosiv-nx/core/icon": ["libs/core/icon/src/index.ts"],
       "@olympia-kosiv-nx/core/layout/service": [
         "libs/core/layout/service/src/index.ts"
       ],

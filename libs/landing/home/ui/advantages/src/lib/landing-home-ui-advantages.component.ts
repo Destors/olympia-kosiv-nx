@@ -1,5 +1,43 @@
 import { Component } from '@angular/core';
+import { CoreIconService } from '@olympia-kosiv-nx/core/icon';
 import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
+
+import { CARDS } from './common/landing-home-ui-advantages.cards';
+import {
+  airFlow,
+  coach,
+  fightIcon,
+  gymIcon,
+  shower,
+  womanIcon,
+} from './common/landing-home-ui-advantages.icons';
+
+const ICONS: { name: string; source: string }[] = [
+  {
+    name: 'gymIcon',
+    source: gymIcon,
+  },
+  {
+    name: 'fightIcon',
+    source: fightIcon,
+  },
+  {
+    name: 'womanIcon',
+    source: womanIcon,
+  },
+  {
+    name: 'shower',
+    source: shower,
+  },
+  {
+    name: 'airFlow',
+    source: airFlow,
+  },
+  {
+    name: 'coach',
+    source: coach,
+  },
+];
 
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-ui-advantages',
@@ -9,38 +47,11 @@ import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
 export class LandingHomeUiAdvantagesComponent {
   advCards = new Array<AdvantagesCard>();
 
-  constructor() {
-    this.advCards = [
-      {
-        icon: 'svg',
-        title: 'Тренажерний зал',
-        desc: 'Займайтеся бодибілденгом, фітнесом або паверлфітенгом сучасному залі з великим вибором тренажерів.',
-      },
-      {
-        icon: 'svg',
-        title: 'Боротьба',
-        desc: 'В залі є секція для заняття боксом, мма та іншими видами боротьби.',
-      },
-      {
-        icon: 'svg',
-        title: 'Окремі роздягальні',
-        desc: 'У нас є окремі роздягальні для хлопців та дівчат.',
-      },
-      {
-        icon: 'svg',
-        title: 'Душ',
-        desc: 'Після тренування ви можете відвідати горячий душ.',
-      },
-      {
-        icon: 'svg',
-        title: 'Вентиляція',
-        desc: 'В нашому залі встановлена сучасна система винтиляції з притоком свіжого повітря.',
-      },
-      {
-        icon: 'svg',
-        title: 'Тренери',
-        desc: 'У нас працюють висококвалифіковані тренери які зможуть завжди допомогти та навчити вас.',
-      },
-    ];
+  constructor(private readonly iconService: CoreIconService) {
+    this.advCards = CARDS;
+
+    for (const icon of ICONS) {
+      this.iconService.add(icon.name, icon.source);
+    }
   }
 }
