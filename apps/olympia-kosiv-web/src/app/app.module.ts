@@ -5,7 +5,6 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { CoreThemeService } from '@olympia-kosiv-nx/core/theme/service';
 
 import { environment } from '../../src/environments/environment';
 import { AppComponent } from './app.component';
@@ -22,7 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
   ],
-  providers: [CoreThemeService],
+  providers: [],
   bootstrap: [AppComponent],
   exports: [RouterModule],
 })

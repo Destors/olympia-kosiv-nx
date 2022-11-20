@@ -1,32 +1,34 @@
-<ng-container [ngSwitch]="layoutType$ | async">
-  <ng-container *ngSwitchDefault>
-    <div>
+<div
+  class="mat-app-background"
+  [ngClass]="{ 'dark-theme': isDarkTheme | async }"
+>
+  <ng-container [ngSwitch]="layoutType$ | async">
+    <ng-container *ngSwitchDefault>
       <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
       <main automation-id="handset">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
-    </div>
-    <!-- menu -->
+    </ng-container>
+    <ng-container *ngSwitchCase="breakpoints.Tablet">
+      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+      <main automation-id="tablet">
+        <ng-container
+          *ngTemplateOutlet="template; context: { mode: 'fluid' }"
+        ></ng-container>
+      </main>
+    </ng-container>
+    <ng-container *ngSwitchCase="breakpoints.Web">
+      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+      <main automation-id="web">
+        <ng-container *ngTemplateOutlet="template"></ng-container>
+      </main>
+      <!-- footer -->
+    </ng-container>
   </ng-container>
-  <ng-container *ngSwitchCase="breakpoints.Tablet">
-    <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
-    <main automation-id="tablet">
-      <ng-container
-        *ngTemplateOutlet="template; context: { mode: 'fluid' }"
-      ></ng-container>
-    </main>
-  </ng-container>
-  <ng-container *ngSwitchCase="breakpoints.Web">
-    <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
-    <main automation-id="web">
-      <ng-container *ngTemplateOutlet="template"></ng-container>
-    </main>
-    <!-- footer -->
-  </ng-container>
-</ng-container>
 
-<ng-template #template let-mode="mode">
-  <!-- <router-outlet name="top"></router-outlet> -->
-  <router-outlet></router-outlet>
-  <!-- <router-outlet name="bottom"></router-outlet> -->
-</ng-template>
+  <ng-template #template let-mode="mode">
+    <!-- <router-outlet name="top"></router-outlet> -->
+    <router-outlet></router-outlet>
+    <!-- <router-outlet name="bottom"></router-outlet> -->
+  </ng-template>
+</div>
