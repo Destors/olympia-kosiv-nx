@@ -21,6 +21,9 @@
       "@olympia-kosiv-nx/core/navigation/common": [
         "libs/core/navigation/common/src/index.ts"
       ],
+      "@olympia-kosiv-nx/core/theme/service": [
+        "libs/core/theme/service/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/contact/page": [
         "libs/landing/contact/page/src/index.ts"
       ],
