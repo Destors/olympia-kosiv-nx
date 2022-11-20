@@ -1,5 +1,6 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { CoreThemeService } from '@olympia-kosiv-nx/core/theme/service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'olympia-kosiv-nx-header',
@@ -7,16 +8,15 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @HostBinding('class') className = '';
-  toggleControl = new FormControl(false);
+  isDarkTheme = new Observable<boolean>();
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(private themeService: CoreThemeService) {}
 
-  ngOnInit(): void {
-    this.toggleControl.valueChanges.subscribe((darkMode) => {
-      const darkClassName = 'darkMode';
-      this.className = darkMode ? darkClassName : '';
-    });
+  ngOnInit() {
+    this.isDarkTheme = this.themeService.isDarkTheme;
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
   }
 }

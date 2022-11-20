@@ -1,7 +1,10 @@
 <header>
   <b class="main-logo">Olympia Kosiv</b>
   <olympia-kosiv-nx-nav></olympia-kosiv-nx-nav>
-  <mat-slide-toggle [formControl]="toggleControl" class="mr-8">
-  </mat-slide-toggle>
+  <mat-slide-toggle
+    [checked]="isDarkTheme | async"
+    (change)="toggleDarkTheme($event.checked)"
+    >Dark theme</mat-slide-toggle
+  >
   <div><a class="nav-tel" href="tel: +380963356351">+380963359351</a></div>
 </header>

@@ -40,7 +40,7 @@ $store-dark-theme: mat.define-dark-theme(
   )
 );
 
-.darkMode {
+.dark-theme {
   @include mat.all-component-colors($store-dark-theme);
 }
 
