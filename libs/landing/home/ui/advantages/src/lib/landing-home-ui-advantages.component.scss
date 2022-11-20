@@ -7,7 +7,7 @@ li {
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 50px 20px;
-  margin-bottom: 20px;
+  height: 100%;
 
   & .icon {
     margin-bottom: 20px;
@@ -22,4 +22,8 @@ li {
     color: rgb(59, 59, 59);
     line-height: 150%;
   }
+}
+
+olympia-kosiv-nx-column {
+  margin-bottom: 40px;
 }
