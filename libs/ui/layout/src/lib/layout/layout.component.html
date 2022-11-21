@@ -2,7 +2,7 @@
   class="mat-app-background"
   [ngClass]="{ 'dark-theme': isDarkTheme | async }"
 >
-  <ng-container [ngSwitch]="layoutType$ | async">
+  <!-- <ng-container [ngSwitch]="layoutType$ | async">
     <ng-container *ngSwitchDefault>
       <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
       <main automation-id="handset">
@@ -22,9 +22,12 @@
       <main automation-id="web">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
-      <!-- footer -->
     </ng-container>
-  </ng-container>
+  </ng-container> -->
+  <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+  <main>
+    <ng-container *ngTemplateOutlet="template"></ng-container>
+  </main>
 
   <ng-template #template let-mode="mode">
     <!-- <router-outlet name="top"></router-outlet> -->
