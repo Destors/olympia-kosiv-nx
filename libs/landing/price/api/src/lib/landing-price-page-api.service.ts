@@ -4,17 +4,31 @@ import {
   AngularFirestoreCollection,
 } from '@angular/fire/compat/firestore';
 import { Prices } from '@olympia-kosiv-nx/landing/price/common';
+import { Observable, of } from 'rxjs';
 
 @Injectable()
 export class LandingPricePageApiService {
   private dbPath = 'landing';
-  pricesRef: AngularFirestoreCollection<Prices>;
+  public pricesArr$: Observable<Prices[] | undefined> = of(undefined);
+  // pricesRef: AngularFirestoreCollection<Prices>;
 
   constructor(private db: AngularFirestore) {
-    this.pricesRef = db.collection(this.dbPath);
+    // this.pricesRef = db.collection(this.dbPath);
   }
 
-  getAll(): AngularFirestoreCollection<Prices> {
-    return this.pricesRef;
+  // getAll(): AngularFirestoreCollection<Prices> {
+  //   return this.pricesRef;
+  // }
+
+  public getAllPrices(): Observable<Prices[] | undefined> {
+    try {
+      this.pricesArr$ = this.db
+        .collection<Prices>(this.dbPath, (ref) => ref)
+        .valueChanges();
+    } catch (e) {
+      console.warn(e);
+      this.pricesArr$ = of(undefined);
+    }
+    return this.pricesArr$;
   }
 }

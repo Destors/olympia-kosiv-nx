@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LandingPricePageApiService } from '@olympia-kosiv-nx/landing/price/api';
 import { Prices } from '@olympia-kosiv-nx/landing/price/common';
 import { Observable } from 'rxjs';
@@ -8,19 +8,13 @@ import { Observable } from 'rxjs';
   templateUrl: './landing-price-page.component.html',
   styleUrls: ['./landing-price-page.component.scss'],
 })
-export class LandingPricePageComponent implements OnInit {
-  prices$ = new Observable<Prices[]>();
+export class LandingPricePageComponent {
+  public prices$: Observable<Prices[] | undefined>;
 
-  preloadingSkeletonCount = new Array(4);
+  public preloadingSkeletonCount = new Array(4);
 
-  constructor(private pricePageService: LandingPricePageApiService) {}
-
-  ngOnInit() {
-    this.getAllPrices();
-  }
-
-  getAllPrices() {
-    this.prices$ = this.pricePageService.getAll().valueChanges();
+  constructor(private pricePageService: LandingPricePageApiService) {
+    this.prices$ = this.pricePageService.getAllPrices();
   }
 
   // Creating mapped prices
