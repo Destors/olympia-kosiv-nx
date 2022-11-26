@@ -4,7 +4,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  color: white;
+
   & h1 {
     font-weight: 600;
     margin-bottom: 0;
@@ -12,23 +12,4 @@ header {
   & .main-logo {
     font-size: 1.5rem;
   }
-}
-
-.main-nav {
-  display: flex;
-  list-style: none;
-  padding: 0;
-
-  & li {
-    margin: 0 10px;
-    color: white;
-    .active {
-      border-bottom: 2px black;
-    }
-  }
-}
-
-.nav-tel {
-  color: white;
-  text-decoration: none;
 }
