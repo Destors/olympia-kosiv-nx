@@ -1,0 +1,12 @@
+@use 'libs/ui/stylesheets/variables' as store;
+
+.fixed-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: store.$color-primary;
+}
