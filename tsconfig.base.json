@@ -40,6 +40,9 @@
       "@olympia-kosiv-nx/landing/home/ui/hero-img": [
         "libs/landing/home/ui/hero-img/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/home/ui/main-cta": [
+        "libs/landing/home/ui/main-cta/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],
