@@ -33,9 +33,9 @@ $store-theme: mat.define-light-theme(
 $store-dark-theme: mat.define-dark-theme(
   (
     color: (
-      primary: $store-primary,
+      primary: $store-warn,
       accent: $store-accent,
-      warn: $store-warn,
+      warn: $store-primary,
     ),
   )
 );

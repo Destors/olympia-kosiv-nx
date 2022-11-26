@@ -5,14 +5,14 @@
   min-height: 80vh;
   display: flex;
   align-items: center;
-  background-image: url('../../../../../../../apps/olympia-kosiv-web/src/assets/landing/img/mainHeaderDark.jpg');
   background-size: cover;
   background-position: center;
   background-color: darkslategrey;
+  background-image: url('../../../../../../../apps/olympia-kosiv-web/src/assets/landing/img/mainHeaderDark.jpg');
   margin-top: -72px;
   margin-bottom: 50px;
-  & .main-header--title-white {
-    color: store.$color-default;
+  & h2 {
+    color: inherit;
     font-weight: 900;
     font-size: 2.5rem;
     line-height: normal;
