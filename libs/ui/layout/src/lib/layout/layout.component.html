@@ -2,12 +2,13 @@
   class="mat-app-background"
   [ngClass]="{ 'dark-theme': isDarkTheme | async }"
 >
-  <!-- <ng-container [ngSwitch]="layoutType$ | async">
+  <ng-container [ngSwitch]="layoutType$ | async">
     <ng-container *ngSwitchDefault>
       <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
       <main automation-id="handset">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
+      <!-- <h2>footer</h2> -->
     </ng-container>
     <ng-container *ngSwitchCase="breakpoints.Tablet">
       <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
@@ -23,11 +24,7 @@
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
     </ng-container>
-  </ng-container> -->
-  <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
-  <main>
-    <ng-container *ngTemplateOutlet="template"></ng-container>
-  </main>
+  </ng-container>
 
   <ng-template #template let-mode="mode">
     <!-- <router-outlet name="top"></router-outlet> -->
