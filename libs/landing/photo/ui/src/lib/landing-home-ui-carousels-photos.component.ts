@@ -6,7 +6,7 @@ import {
   MAIN_ROOM_PHOTOS,
   OTHER_PHOTOS,
   POWER_ROOM_PHOTOS,
-} from './common/landing-home-ui-carousels-photos.imgs';
+} from '../../../common/src/lib/landing-home-ui-carousels-photos.imgs';
 
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-ui-carousels-photos',

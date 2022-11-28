@@ -12,6 +12,7 @@
     "landing-home-ui-advantages": "libs/landing/home/ui/advantages",
     "landing-home-ui-hero-img": "libs/landing/home/ui/hero-img",
     "landing-home-ui-main-cta": "libs/landing/home/ui/main-cta",
+    "landing-photo-common": "libs/landing/photo/common",
     "landing-photo-page": "libs/landing/photo/page",
     "landing-photo-ui": "libs/landing/photo/ui",
     "landing-price-api": "libs/landing/price/api",
