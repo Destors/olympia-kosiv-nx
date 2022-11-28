@@ -1,22 +1,17 @@
+# OlympiaKosivNx by Destors
 
-
-# OlympiaKosivNx
-
-This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
-🔎 **Smart, Fast and Extensible Build System**
-
-## Quick Start & Documentation
-
-[Nx Documentation](https://nx.dev/angular)
-
-[10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
-
-[Interactive Tutorial](https://nx.dev/react-tutorial/01-create-application)
-
-## Commited by Destors
-The project was created at the request of a friend, the owner of a local gym.
+<h1>The project was created at the request of a friend, the owner of a local gym.</h1>
 
 I tried to use the best practices for building architecture on NX.
+
+<h2>Within this application I used the following techniques:</h2>
+
+-Used the best practices for creating Angular architecture from NRWL NX Monorepo.
+-Tried to follow the rules of SOLID, DRY.
+-Used an interesting layout technique, with the creation of a 12-column system based on Angular Material breakpoints.
+-Used service for creating custom svg icons using Angular Material icons. This is the best way to add icons to a page without creating new dependencies.
+-Create a basic dark theme with simple service on Angular Material.
+-Working with AngularFire Api Firebase services and creating a basic backend architecture.
+-Work with ngOptimazedImage.
+-Creation of custom pipes and directives.
+-Using typescript interfaces and strong typing.
