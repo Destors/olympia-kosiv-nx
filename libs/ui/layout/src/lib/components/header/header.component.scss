@@ -1,0 +1,24 @@
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
+
+header {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+
+  & h1 {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  & .main-logo {
+    font-size: 1.5rem;
+  }
+
+  & olympia-kosiv-nx-nav {
+    display: none;
+    @include store-mixins.media-tablet-up() {
+      display: block;
+    }
+  }
+}

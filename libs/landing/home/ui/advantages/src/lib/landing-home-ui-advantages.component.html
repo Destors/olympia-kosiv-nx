@@ -1,0 +1,15 @@
+<ul>
+  <olympia-kosiv-nx-row tablet>
+    <olympia-kosiv-nx-column
+      tablet="6"
+      web="4"
+      *ngFor="let advCardsArr of advCards"
+    >
+      <li>
+        <olympia-kosiv-nx-landing-home-ui-advantages-card
+          [advCards]="advCardsArr"
+        ></olympia-kosiv-nx-landing-home-ui-advantages-card>
+      </li>
+    </olympia-kosiv-nx-column>
+  </olympia-kosiv-nx-row>
+</ul>

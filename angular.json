@@ -2,11 +2,30 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "landing-home-page": "libs/landing/home-page",
+    "core-icon": "libs/core/icon",
+    "core-layout-service": "libs/core/layout/service",
+    "core-navigation-common": "libs/core/navigation/common",
+    "core-theme-service": "libs/core/theme/service",
+    "landing-contact-page": "libs/landing/contact/page",
+    "landing-home-common": "libs/landing/home/common",
+    "landing-home-page": "libs/landing/home/page",
+    "landing-home-ui-advantages": "libs/landing/home/ui/advantages",
+    "landing-home-ui-hero-img": "libs/landing/home/ui/hero-img",
+    "landing-home-ui-main-cta": "libs/landing/home/ui/main-cta",
+    "landing-photo-common": "libs/landing/photo/common",
+    "landing-photo-page": "libs/landing/photo/page",
+    "landing-photo-ui": "libs/landing/photo/ui",
+    "landing-price-api": "libs/landing/price/api",
+    "landing-price-common": "libs/landing/price/common",
+    "landing-price-page": "libs/landing/price/page",
+    "landing-price-ui-card": "libs/landing/price/ui/card",
+    "landing-price-ui-pipes": "libs/landing/price/ui/pipes",
     "olympia-kosiv-web": "apps/olympia-kosiv-web",
     "olympia-kosiv-web-e2e": "apps/olympia-kosiv-web-e2e",
     "ui-carousel": "libs/ui/carousel",
     "ui-container": "libs/ui/container",
-    "ui-image": "libs/ui/image"
+    "ui-grid": "libs/ui/grid",
+    "ui-image": "libs/ui/image",
+    "ui-layout": "libs/ui/layout"
   }
 }

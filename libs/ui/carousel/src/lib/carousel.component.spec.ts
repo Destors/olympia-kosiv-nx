@@ -9,7 +9,7 @@ import { CarouselNavsModule } from './carousel-navs/carousel-navs.module';
 import { CarouselSlideModule } from './carousel-slide/carousel-slide.module';
 
 @Component({
-  template: `<banshop-carousel automation-id="carousel" [images]="images"></banshop-carousel>`,
+  template: `<olympia-kosiv-nx-carousel automation-id="carousel" [images]="images"></olympia-kosiv-nx-carousel>`,
 })
 export class WrapperComponent {
   images = ['/1.jpg', '/2.jpg', '/3.jpg'];

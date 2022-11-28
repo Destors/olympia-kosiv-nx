@@ -12,17 +12,17 @@
 :host {
   display: block;
   position: relative;
-  height: 20rem;
+  min-height: 100%;
 
   @include store-mixins.media-web() {
     height: 25rem;
   }
 
-  banshop-carousel-navs {
+  olympia-kosiv-nx-carousel-navs {
     opacity: 0;
   }
 
-  &:hover banshop-carousel-navs {
+  &:hover olympia-kosiv-nx-carousel-navs {
     opacity: 1;
   }
 
@@ -38,8 +38,8 @@
   opacity: 0;
 }
 
-banshop-carousel-slide,
-banshop-carousel-dots,
-banshop-carousel-navs {
+olympia-kosiv-nx-carousel-slide,
+olympia-kosiv-nx-carousel-dots,
+olympia-kosiv-nx-carousel-navs {
   z-index: 1;
 }

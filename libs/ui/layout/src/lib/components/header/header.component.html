@@ -1,0 +1,8 @@
+<header>
+  <b class="main-logo">Olympia Kosiv</b>
+  <olympia-kosiv-nx-nav></olympia-kosiv-nx-nav>
+  <mat-slide-toggle
+    [checked]="isDarkTheme | async"
+    (change)="toggleDarkTheme($event.checked)"
+  ></mat-slide-toggle>
+</header>

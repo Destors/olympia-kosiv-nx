@@ -7,7 +7,7 @@ import { CarouselSlideComponent } from './carousel-slide.component';
 import { CarouselSlideComponentPo } from './carousel-slide.component.po';
 
 @Component({
-  template: `<banshop-carousel-slide automation-id="carousel-slide" [image]="image"></banshop-carousel-slide>`,
+  template: `<olympia-kosiv-nx-carousel-slide automation-id="carousel-slide" [image]="image"></olympia-kosiv-nx-carousel-slide>`,
 })
 export class WrapperComponent {
   image = '/1.jpg';

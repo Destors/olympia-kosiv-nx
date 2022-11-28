@@ -5,7 +5,7 @@ import { CarouselDotsComponent } from './carousel-dots.component';
 import { CarouselComponentPo } from './carousel-dots.component.po';
 
 @Component({
-  template: `<banshop-carousel-dots automation-id="carousel-dots" [counts]="counts"></banshop-carousel-dots>`,
+  template: `<olympia-kosiv-nx-carousel-dots automation-id="carousel-dots" [counts]="counts"></olympia-kosiv-nx-carousel-dots>`,
 })
 export class WrapperComponent {
   counts = 3;

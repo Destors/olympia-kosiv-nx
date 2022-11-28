@@ -7,7 +7,7 @@ import { CarouselNavsComponent } from './carousel-navs.component';
 import { CarouselNavsComponentPo } from './carousel-navs.component.po';
 
 @Component({
-  template: `<banshop-carousel-navs automation-id="carousel-navs"></banshop-carousel-navs>`,
+  template: `<olympia-kosiv-nx-carousel-navs automation-id="carousel-navs"></olympia-kosiv-nx-carousel-navs>`,
 })
 export class WrapperComponent {}
 

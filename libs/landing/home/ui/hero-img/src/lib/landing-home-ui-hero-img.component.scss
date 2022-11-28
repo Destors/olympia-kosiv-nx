@@ -1,0 +1,25 @@
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+olympia-kosiv-nx-column {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+olympia-kosiv-nx-column.title-left {
+  order: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 80px 0px 80px;
+  margin-bottom: 20px;
+}
