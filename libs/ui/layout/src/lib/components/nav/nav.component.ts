@@ -15,6 +15,10 @@ export function getLinks(paths: NavigationPaths): NavigationLink[] {
       },
     },
     {
+      route: paths.photo,
+      label: 'Фото',
+    },
+    {
       route: paths.price,
       label: 'Ціни',
     },

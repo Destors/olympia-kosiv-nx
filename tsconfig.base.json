@@ -46,6 +46,9 @@
       "@olympia-kosiv-nx/landing/home/ui/main-cta": [
         "libs/landing/home/ui/main-cta/src/index.ts"
       ],
+      "@olympia-kosiv-nx/landing/photo/page": [
+        "libs/landing/photo/page/src/index.ts"
+      ],
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],

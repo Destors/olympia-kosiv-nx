@@ -19,6 +19,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: NAVIGATION_PATHS.photo,
+        loadChildren: () =>
+          import('@olympia-kosiv-nx/landing/photo/page').then(
+            (m) => m.LandingPhotoPageModule
+          ),
+      },
+      {
         path: NAVIGATION_PATHS.price,
         loadChildren: () =>
           import('@olympia-kosiv-nx/landing/price/page').then(
