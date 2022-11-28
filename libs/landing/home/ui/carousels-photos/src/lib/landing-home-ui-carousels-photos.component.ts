@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 
-import { MAIN_ROOM_PHOTOS } from './common/landing-home-ui-carousels-photos.imgs';
+import {
+  DRESSING_ROOM_PHOTOS,
+  FIGHT_ROOM_PHOTOS,
+  MAIN_ROOM_PHOTOS,
+  OTHER_PHOTOS,
+  POWER_ROOM_PHOTOS,
+} from './common/landing-home-ui-carousels-photos.imgs';
 
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-ui-carousels-photos',
@@ -9,6 +15,10 @@ import { MAIN_ROOM_PHOTOS } from './common/landing-home-ui-carousels-photos.imgs
 })
 export class LandingHomeUiCarouselsPhotosComponent {
   mainRoomPhotosArr = MAIN_ROOM_PHOTOS;
+  dressingRoomArr = DRESSING_ROOM_PHOTOS;
+  powerRoomArr = POWER_ROOM_PHOTOS;
+  fightRoomArr = FIGHT_ROOM_PHOTOS;
+  otherPhotoArr = OTHER_PHOTOS;
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 }
