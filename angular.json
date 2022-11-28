@@ -10,6 +10,7 @@
     "landing-home-common": "libs/landing/home/common",
     "landing-home-page": "libs/landing/home/page",
     "landing-home-ui-advantages": "libs/landing/home/ui/advantages",
+    "landing-home-ui-carousels-photos": "libs/landing/home/ui/carousels-photos",
     "landing-home-ui-hero-img": "libs/landing/home/ui/hero-img",
     "landing-home-ui-main-cta": "libs/landing/home/ui/main-cta",
     "landing-price-api": "libs/landing/price/api",
