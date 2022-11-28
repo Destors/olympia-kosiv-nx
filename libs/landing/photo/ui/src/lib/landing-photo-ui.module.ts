@@ -4,11 +4,11 @@ import { CarouselModule } from '@olympia-kosiv-nx/ui/carousel';
 import { UiContainerModule } from '@olympia-kosiv-nx/ui/container';
 import { UiGridModule } from '@olympia-kosiv-nx/ui/grid';
 
-import { LandingHomeUiCarouselsPhotosComponent } from './landing-home-ui-carousels-photos.component';
+import { LandingPhotoUiComponent } from './landing-home-ui-carousels-photos.component';
 
 @NgModule({
   imports: [CommonModule, UiContainerModule, UiGridModule, CarouselModule],
-  declarations: [LandingHomeUiCarouselsPhotosComponent],
-  exports: [LandingHomeUiCarouselsPhotosComponent],
+  declarations: [LandingPhotoUiComponent],
+  exports: [LandingPhotoUiComponent],
 })
-export class LandingHomeUiCarouselsPhotosModule {}
+export class LandingPhotoUiModule {}

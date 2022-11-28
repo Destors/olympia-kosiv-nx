@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'landing-home-ui-carousels-photos',
-  preset: '../../../../../jest.preset.js',
+  displayName: 'landing-photo-ui',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,8 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory:
-    '../../../../../coverage/libs/landing/home/ui/carousels-photos',
+  coverageDirectory: '../../../../coverage/libs/landing/photo/ui',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

@@ -13,7 +13,7 @@ import {
   templateUrl: './landing-home-ui-carousels-photos.component.html',
   styleUrls: ['./landing-home-ui-carousels-photos.component.scss'],
 })
-export class LandingHomeUiCarouselsPhotosComponent {
+export class LandingPhotoUiComponent {
   mainRoomPhotosArr = MAIN_ROOM_PHOTOS;
   dressingRoomArr = DRESSING_ROOM_PHOTOS;
   powerRoomArr = POWER_ROOM_PHOTOS;

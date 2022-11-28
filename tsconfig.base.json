@@ -37,9 +37,6 @@
       "@olympia-kosiv-nx/landing/home/ui/advantages": [
         "libs/landing/home/ui/advantages/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/ui/carousels-photos": [
-        "libs/landing/home/ui/carousels-photos/src/index.ts"
-      ],
       "@olympia-kosiv-nx/landing/home/ui/hero-img": [
         "libs/landing/home/ui/hero-img/src/index.ts"
       ],
@@ -48,6 +45,9 @@
       ],
       "@olympia-kosiv-nx/landing/photo/page": [
         "libs/landing/photo/page/src/index.ts"
+      ],
+      "@olympia-kosiv-nx/landing/photo/ui": [
+        "libs/landing/photo/ui/src/index.ts"
       ],
       "@olympia-kosiv-nx/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
