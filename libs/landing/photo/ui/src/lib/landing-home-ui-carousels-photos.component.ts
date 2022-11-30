@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-
 import {
   DRESSING_ROOM_PHOTOS,
   FIGHT_ROOM_PHOTOS,
   MAIN_ROOM_PHOTOS,
   OTHER_PHOTOS,
   POWER_ROOM_PHOTOS,
-} from '../../../common/src/lib/landing-home-ui-carousels-photos.imgs';
+} from '@olympia-kosiv-nx/landing/photo/common';
 
 @Component({
   selector: 'olympia-kosiv-nx-landing-home-ui-carousels-photos',
