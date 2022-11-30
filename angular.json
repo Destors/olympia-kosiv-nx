@@ -14,7 +14,6 @@
     "landing-home-ui-main-cta": "libs/landing/home/ui/main-cta",
     "landing-photo-common": "libs/landing/photo/common",
     "landing-photo-page": "libs/landing/photo/page",
-    "landing-photo-ui": "libs/landing/photo/ui",
     "landing-price-api": "libs/landing/price/api",
     "landing-price-common": "libs/landing/price/common",
     "landing-price-page": "libs/landing/price/page",
