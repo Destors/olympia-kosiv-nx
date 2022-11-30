@@ -1,3 +1,34 @@
 <section>
-  <olympia-kosiv-nx-landing-home-ui-carousels-photos></olympia-kosiv-nx-landing-home-ui-carousels-photos>
+  <olympia-kosiv-nx-container>
+    <olympia-kosiv-nx-row web>
+      <olympia-kosiv-nx-column web="12"
+        ><h3>Головна зала</h3>
+        <olympia-kosiv-nx-carousel
+          [images]="mainRoomPhotosArr"
+        ></olympia-kosiv-nx-carousel
+      ></olympia-kosiv-nx-column>
+      <olympia-kosiv-nx-column web="6"
+        ><h3>Роздягальні та душ</h3>
+        <olympia-kosiv-nx-carousel
+          [images]="dressingRoomArr"
+        ></olympia-kosiv-nx-carousel
+      ></olympia-kosiv-nx-column>
+      <olympia-kosiv-nx-column web="6"
+        ><h3>Силова зала</h3>
+        <olympia-kosiv-nx-carousel
+          [images]="powerRoomArr"
+        ></olympia-kosiv-nx-carousel
+      ></olympia-kosiv-nx-column>
+      <olympia-kosiv-nx-column web="6"
+        ><h3>Татамі та бородьба</h3>
+        <olympia-kosiv-nx-carousel
+          [images]="fightRoomArr"
+        ></olympia-kosiv-nx-carousel
+      ></olympia-kosiv-nx-column>
+      <olympia-kosiv-nx-column web="6"
+        ><h3>Тренажери та інше</h3>
+        <olympia-kosiv-nx-carousel
+          [images]="otherPhotoArr"
+        ></olympia-kosiv-nx-carousel></olympia-kosiv-nx-column></olympia-kosiv-nx-row
+  ></olympia-kosiv-nx-container>
 </section>
