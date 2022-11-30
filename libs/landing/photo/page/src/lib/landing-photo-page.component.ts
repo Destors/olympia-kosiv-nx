@@ -15,10 +15,10 @@ export interface PhotosArrModel {
 export function getCarouselPhotos(): PhotosArrModel[] {
   return [
     { title: 'Головна зала', imgArr: [...MAIN_ROOM_PHOTOS] },
+    { title: 'Тренажери та інше', imgArr: [...OTHER_PHOTOS] },
     { title: 'Роздягальні та душ', imgArr: [...DRESSING_ROOM_PHOTOS] },
     { title: 'Силова зала', imgArr: [...POWER_ROOM_PHOTOS] },
     { title: 'Татамі та бородьба', imgArr: [...FIGHT_ROOM_PHOTOS] },
-    { title: 'Тренажери та інше', imgArr: [...OTHER_PHOTOS] },
   ];
 }
 
@@ -31,7 +31,7 @@ export class LandingPhotoPageComponent {
   carouselPhotosArr: PhotosArrModel[];
 
   carouselColumCount = (arr: PhotosArrModel): number =>
-    arr.title === 'Головна зала' ? 12 : 6;
+    arr.title === 'Головна зала' || arr.title === 'Тренажери та інше' ? 6 : 4;
 
   trackByFn(index: number, arr: PhotosArrModel): string {
     return arr.title;

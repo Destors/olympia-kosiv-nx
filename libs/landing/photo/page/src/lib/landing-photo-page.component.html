@@ -4,10 +4,12 @@
       <olympia-kosiv-nx-column
         *ngFor="let photosArr of carouselPhotosArr; trackBy: trackByFn"
         [attr.web]="carouselColumCount(photosArr)"
-        ><h3>{{ photosArr.title }}</h3>
+      >
         <olympia-kosiv-nx-carousel
           [images]="photosArr.imgArr"
-        ></olympia-kosiv-nx-carousel
-      ></olympia-kosiv-nx-column> </olympia-kosiv-nx-row
-  ></olympia-kosiv-nx-container>
+        ></olympia-kosiv-nx-carousel>
+        <h3>{{ photosArr.title }}</h3></olympia-kosiv-nx-column
+      >
+    </olympia-kosiv-nx-row></olympia-kosiv-nx-container
+  >
 </section>
