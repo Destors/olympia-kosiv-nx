@@ -12,10 +12,10 @@
 :host {
   display: block;
   position: relative;
-  min-height: 100%;
+  min-height: 30rem;
 
   @include store-mixins.media-web() {
-    height: 25rem;
+    min-height: 30rem;
   }
 
   olympia-kosiv-nx-carousel-navs {
@@ -27,7 +27,7 @@
   }
 
   @include store-mixins.media-handset() {
-    height: 20rem;
+    min-height: 20rem;
   }
 }
 
