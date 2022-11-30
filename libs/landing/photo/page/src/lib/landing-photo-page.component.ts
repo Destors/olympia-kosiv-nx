@@ -30,6 +30,13 @@ export function getCarouselPhotos(): PhotosArrModel[] {
 export class LandingPhotoPageComponent {
   carouselPhotosArr: PhotosArrModel[];
 
+  carouselColumCount = (arr: PhotosArrModel): number =>
+    arr.title === 'Головна зала' ? 12 : 6;
+
+  trackByFn(index: number, arr: PhotosArrModel): string {
+    return arr.title;
+  }
+
   constructor() {
     this.carouselPhotosArr = getCarouselPhotos();
   }

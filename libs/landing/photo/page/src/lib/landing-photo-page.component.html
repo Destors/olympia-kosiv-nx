@@ -2,8 +2,8 @@
   <olympia-kosiv-nx-container>
     <olympia-kosiv-nx-row web>
       <olympia-kosiv-nx-column
-        *ngFor="let photosArr of carouselPhotosArr"
-        web="6"
+        *ngFor="let photosArr of carouselPhotosArr; trackBy: trackByFn"
+        [attr.web]="carouselColumCount(photosArr)"
         ><h3>{{ photosArr.title }}</h3>
         <olympia-kosiv-nx-carousel
           [images]="photosArr.imgArr"
