@@ -1,4 +1,5 @@
 # OlympiaKosivNx by Destors
+<b>11/30/2022 WIP</b>
 
 <h2>Within this application I used the following techniques:</h2>
 
