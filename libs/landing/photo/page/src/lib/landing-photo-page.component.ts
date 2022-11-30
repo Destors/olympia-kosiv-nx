@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   DRESSING_ROOM_PHOTOS,
   FIGHT_ROOM_PHOTOS,
@@ -7,19 +7,30 @@ import {
   POWER_ROOM_PHOTOS,
 } from '@olympia-kosiv-nx/landing/photo/common';
 
+export interface PhotosArrModel {
+  title: string;
+  imgArr: string[];
+}
+
+export function getCarouselPhotos(): PhotosArrModel[] {
+  return [
+    { title: 'Головна зала', imgArr: [...MAIN_ROOM_PHOTOS] },
+    { title: 'Роздягальні та душ', imgArr: [...DRESSING_ROOM_PHOTOS] },
+    { title: 'Силова зала', imgArr: [...POWER_ROOM_PHOTOS] },
+    { title: 'Татамі та бородьба', imgArr: [...FIGHT_ROOM_PHOTOS] },
+    { title: 'Тренажери та інше', imgArr: [...OTHER_PHOTOS] },
+  ];
+}
+
 @Component({
   selector: 'olympia-kosiv-nx-landing-photo-page',
   templateUrl: './landing-photo-page.component.html',
   styleUrls: ['./landing-photo-page.component.scss'],
 })
-export class LandingPhotoPageComponent implements OnInit {
-  mainRoomPhotosArr = MAIN_ROOM_PHOTOS;
-  dressingRoomArr = DRESSING_ROOM_PHOTOS;
-  powerRoomArr = POWER_ROOM_PHOTOS;
-  fightRoomArr = FIGHT_ROOM_PHOTOS;
-  otherPhotoArr = OTHER_PHOTOS;
+export class LandingPhotoPageComponent {
+  carouselPhotosArr: PhotosArrModel[];
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  constructor() {
+    this.carouselPhotosArr = getCarouselPhotos();
+  }
 }

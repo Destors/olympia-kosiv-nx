@@ -1,34 +1,13 @@
 <section>
   <olympia-kosiv-nx-container>
     <olympia-kosiv-nx-row web>
-      <olympia-kosiv-nx-column web="12"
-        ><h3>Головна зала</h3>
+      <olympia-kosiv-nx-column
+        *ngFor="let photosArr of carouselPhotosArr"
+        web="6"
+        ><h3>{{ photosArr.title }}</h3>
         <olympia-kosiv-nx-carousel
-          [images]="mainRoomPhotosArr"
+          [images]="photosArr.imgArr"
         ></olympia-kosiv-nx-carousel
-      ></olympia-kosiv-nx-column>
-      <olympia-kosiv-nx-column web="6"
-        ><h3>Роздягальні та душ</h3>
-        <olympia-kosiv-nx-carousel
-          [images]="dressingRoomArr"
-        ></olympia-kosiv-nx-carousel
-      ></olympia-kosiv-nx-column>
-      <olympia-kosiv-nx-column web="6"
-        ><h3>Силова зала</h3>
-        <olympia-kosiv-nx-carousel
-          [images]="powerRoomArr"
-        ></olympia-kosiv-nx-carousel
-      ></olympia-kosiv-nx-column>
-      <olympia-kosiv-nx-column web="6"
-        ><h3>Татамі та бородьба</h3>
-        <olympia-kosiv-nx-carousel
-          [images]="fightRoomArr"
-        ></olympia-kosiv-nx-carousel
-      ></olympia-kosiv-nx-column>
-      <olympia-kosiv-nx-column web="6"
-        ><h3>Тренажери та інше</h3>
-        <olympia-kosiv-nx-carousel
-          [images]="otherPhotoArr"
-        ></olympia-kosiv-nx-carousel></olympia-kosiv-nx-column></olympia-kosiv-nx-row
+      ></olympia-kosiv-nx-column> </olympia-kosiv-nx-row
   ></olympia-kosiv-nx-container>
 </section>
