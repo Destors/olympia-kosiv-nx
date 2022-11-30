@@ -18,10 +18,11 @@
     dependencies.
   </li>
   <li>
-    Create a basic dark theme with simple service on Angular Material. Working
-    with AngularFire Api Firebase services and creating a basic backend
-    architecture.
+    Create a basic dark theme with simple service on Angular Material. 
   </li>
+  <li>Working
+    with AngularFire Api Firebase services and creating a basic backend
+    architecture.</li>
   <li>Work with ngOptimazedImage.</li>
   <li>
     Creation of custom pipes and directives. Using typescript interfaces and
