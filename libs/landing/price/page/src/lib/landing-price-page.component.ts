@@ -17,7 +17,6 @@ export class LandingPricePageComponent {
 
   constructor(private pricePageService: LandingPricePageApiService) {
     this.prices$ = this.pricePageService.getAllPrices();
-
     this.pricesWithCoach$ = this.filterPricesWithCoach(true);
     this.pricesWithoutCoach$ = this.filterPricesWithCoach(false);
   }

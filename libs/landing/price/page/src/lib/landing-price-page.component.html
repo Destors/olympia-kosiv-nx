@@ -4,10 +4,11 @@
       <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
       <p>Ознайомтесь зі списком наших абонементів.</p>
     </div>
-    <h2>Самостійні занаття:</h2>
+
     <ng-container
       *ngIf="pricesWithoutCoach$ | async as prices; else loadingPrices"
     >
+      <h2>Самостійні занаття:</h2>
       <olympia-row tablet>
         <olympia-column tablet="4" web="4" *ngFor="let price of prices"
           ><olympia-landing-price-ui-card
@@ -30,10 +31,10 @@
       </olympia-row>
     </ng-template>
 
-    <h2>Заняття з тренером:</h2>
     <ng-container
       *ngIf="pricesWithCoach$ | async as prices; else loadingPrices"
     >
+      <h2>Заняття з тренером:</h2>
       <olympia-row tablet>
         <olympia-column tablet="4" web="4" *ngFor="let price of prices"
           ><olympia-landing-price-ui-card
