@@ -4,12 +4,16 @@
   margin-top: 3rem;
   margin-bottom: 2rem;
   & h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 700;
+    & span {
+      color: #f4511e;
+    }
   }
 
   & p {
     font-size: 1.2rem;
+    color: rgb(189, 189, 189);
   }
 }
 
