@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LandingPricePageApiService } from '@olympia/landing/price/api';
 import { Prices } from '@olympia/landing/price/common';
-import { Observable } from 'rxjs';
+import { filter, map, Observable } from 'rxjs';
 
 @Component({
   selector: 'olympia-landing-price-page',
@@ -9,12 +9,23 @@ import { Observable } from 'rxjs';
   styleUrls: ['./landing-price-page.component.scss'],
 })
 export class LandingPricePageComponent {
-  public prices$: Observable<Prices[] | undefined>;
+  prices$: Observable<Prices[] | undefined>;
+  pricesWithCoach$: Observable<Prices[] | undefined>;
+  pricesWithoutCoach$: Observable<Prices[] | undefined>;
 
-  public preloadingSkeletonCount = new Array(4);
+  preloadingSkeletonCount = new Array(4);
 
   constructor(private pricePageService: LandingPricePageApiService) {
     this.prices$ = this.pricePageService.getAllPrices();
+
+    this.pricesWithCoach$ = this.getPricesWithCoach(true);
+    this.pricesWithoutCoach$ = this.getPricesWithCoach(false);
+  }
+
+  getPricesWithCoach(coach: boolean): Observable<Prices[] | undefined> {
+    return this.prices$.pipe(
+      map((val) => val?.filter((x) => (coach ? x.withCoach : !x.withCoach)))
+    );
   }
 
   // Creating mapped prices
