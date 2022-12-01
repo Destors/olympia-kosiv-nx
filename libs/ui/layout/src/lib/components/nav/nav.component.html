@@ -1,4 +1,4 @@
-<olympia-kosiv-nx-nav-link *ngFor="let link of links; trackBy: trackByFn"
+<olympia-nav-link *ngFor="let link of links; trackBy: trackByFn"
   ><a
     #rla="routerLinkActive"
     routerLinkActive
@@ -7,5 +7,5 @@
     [routerLink]="link.route"
   >
     {{ link.label }}
-  </a></olympia-kosiv-nx-nav-link
+  </a></olympia-nav-link
 >

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { HeroModel, PositionType } from '@olympia-kosiv-nx/landing/home/common';
+import { HeroModel, PositionType } from '@olympia/landing/home/common';
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-home-ui-hero-img.',
+  selector: 'olympia-landing-home-ui-hero-img.',
   templateUrl: './landing-home-ui-hero-img.component.html',
   styleUrls: ['./landing-home-ui-hero-img.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

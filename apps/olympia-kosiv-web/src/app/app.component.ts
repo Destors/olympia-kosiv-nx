@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-root',
+  selector: 'olympia-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

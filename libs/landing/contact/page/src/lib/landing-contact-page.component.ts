@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroModel } from '@olympia-kosiv-nx/landing/home/common';
+import { HeroModel } from '@olympia/landing/home/common';
 
 export const HEROADDRESS = {
   img: '../assets/landing/img/gymMapCropped.jpg',
@@ -8,7 +8,7 @@ export const HEROADDRESS = {
 };
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-contact-page',
+  selector: 'olympia-landing-contact-page',
   templateUrl: './landing-contact-page.component.html',
   styleUrls: ['./landing-contact-page.component.scss'],
 })

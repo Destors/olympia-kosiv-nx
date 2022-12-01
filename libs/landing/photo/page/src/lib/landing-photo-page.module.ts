@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CarouselModule } from '@olympia-kosiv-nx/ui/carousel';
-import { UiContainerModule } from '@olympia-kosiv-nx/ui/container';
-import { UiGridModule } from '@olympia-kosiv-nx/ui/grid';
+import { CarouselModule } from '@olympia/ui/carousel';
+import { UiContainerModule } from '@olympia/ui/container';
+import { UiGridModule } from '@olympia/ui/grid';
 
 import { LandingPhotoPageComponent } from './landing-photo-page.component';
 

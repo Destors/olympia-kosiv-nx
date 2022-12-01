@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { LandingPricePageApiService } from '@olympia-kosiv-nx/landing/price/api';
-import { Prices } from '@olympia-kosiv-nx/landing/price/common';
+import { LandingPricePageApiService } from '@olympia/landing/price/api';
+import { Prices } from '@olympia/landing/price/common';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-price-page',
+  selector: 'olympia-landing-price-page',
   templateUrl: './landing-price-page.component.html',
   styleUrls: ['./landing-price-page.component.scss'],
 })

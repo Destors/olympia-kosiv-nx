@@ -3,7 +3,7 @@ import {
   NavigationLink,
   NavigationPaths,
   PATHS,
-} from '@olympia-kosiv-nx/core/navigation/common';
+} from '@olympia/core/navigation/common';
 
 export function getLinks(paths: NavigationPaths): NavigationLink[] {
   return [
@@ -30,7 +30,7 @@ export function getLinks(paths: NavigationPaths): NavigationLink[] {
 }
 
 @Component({
-  selector: 'olympia-kosiv-nx-nav',
+  selector: 'olympia-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
 })

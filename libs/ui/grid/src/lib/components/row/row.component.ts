@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-row',
+  selector: 'olympia-row',
   templateUrl: './row.component.html',
   styleUrls: ['./row.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

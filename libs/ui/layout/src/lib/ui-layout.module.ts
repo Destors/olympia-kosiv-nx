@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { UiContainerModule } from '@olympia-kosiv-nx/ui/container';
+import { UiContainerModule } from '@olympia/ui/container';
 
 import { HeaderModule } from './components/header/header.module';
 import { MenuModule } from './components/menu/menu.module';

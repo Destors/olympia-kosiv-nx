@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-container',
+  selector: 'olympia-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

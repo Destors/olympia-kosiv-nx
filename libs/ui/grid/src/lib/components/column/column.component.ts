@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-column',
+  selector: 'olympia-column',
   templateUrl: './column.component.html',
   styleUrls: ['./column.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

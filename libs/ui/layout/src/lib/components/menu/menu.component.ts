@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-menu',
+  selector: 'olympia-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })

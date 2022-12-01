@@ -1,4 +1,4 @@
-<olympia-kosiv-nx-container>
+<olympia-container>
   <div class="lead-logo">
     <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
     <p>Ознайомтесь зі списком наших абонементів</p>
@@ -6,25 +6,25 @@
   <section>
     <h2>Тренажерний зал:</h2>
     <ng-container *ngIf="prices$ | async as prices; else loadingPrices">
-      <olympia-kosiv-nx-row tablet>
-        <olympia-kosiv-nx-column tablet="4" web="4" *ngFor="let price of prices"
-          ><olympia-kosiv-nx-landing-price-ui-card
+      <olympia-row tablet>
+        <olympia-column tablet="4" web="4" *ngFor="let price of prices"
+          ><olympia-landing-price-ui-card
             [price]="price"
-          ></olympia-kosiv-nx-landing-price-ui-card
-        ></olympia-kosiv-nx-column>
-      </olympia-kosiv-nx-row>
+          ></olympia-landing-price-ui-card
+        ></olympia-column>
+      </olympia-row>
     </ng-container>
 
     <ng-template #loadingPrices>
-      <olympia-kosiv-nx-row tablet>
-        <olympia-kosiv-nx-column
+      <olympia-row tablet>
+        <olympia-column
           tablet="6"
           web="4"
           *ngFor="let item of preloadingSkeletonCount"
-          ><olympia-kosiv-nx-landing-price-ui-card
+          ><olympia-landing-price-ui-card
             [preloadingSkeleton]="true"
-          ></olympia-kosiv-nx-landing-price-ui-card
-        ></olympia-kosiv-nx-column>
-      </olympia-kosiv-nx-row>
+          ></olympia-landing-price-ui-card
+        ></olympia-column>
+      </olympia-row>
     </ng-template></section
-></olympia-kosiv-nx-container>
+></olympia-container>

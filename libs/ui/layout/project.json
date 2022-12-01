@@ -2,7 +2,7 @@
   "name": "ui-layout",
   "projectType": "library",
   "sourceRoot": "libs/ui/layout/src",
-  "prefix": "olympia-kosiv-nx",
+  "prefix": "olympia",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
-import { UiContainerModule } from '@olympia-kosiv-nx/ui/container';
-import { UiGridModule } from '@olympia-kosiv-nx/ui/grid';
+import { UiContainerModule } from '@olympia/ui/container';
+import { UiGridModule } from '@olympia/ui/grid';
 
 import { LandingHomeUiMainCtaComponent } from './landing-home-ui-main-cta.component';
 

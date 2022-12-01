@@ -1,17 +1,17 @@
 <div *ngIf="slides?.length" (swipeleft)="onNext()" (swiperight)="onPrev()">
-  <olympia-kosiv-nx-carousel-slide
+  <olympia-carousel-slide
     automation-id="carousel-slide"
     [image]="image"
     [active]="active === index"
     *ngFor="let image of slides; let index = index"
     (clicked)="onClicked()"
-  ></olympia-kosiv-nx-carousel-slide>
+  ></olympia-carousel-slide>
 
-  <olympia-kosiv-nx-carousel-dots
+  <olympia-carousel-dots
     automation-id="carousel-dots"
     [counts]="slides.length"
     [active]="active"
     (selected)="onSelected($event)"
-  ></olympia-kosiv-nx-carousel-dots>
-  <olympia-kosiv-nx-carousel-navs automation-id="carousel-navs" (prev)="onPrev()" (next)="onNext()"></olympia-kosiv-nx-carousel-navs>
+  ></olympia-carousel-dots>
+  <olympia-carousel-navs automation-id="carousel-navs" (prev)="onPrev()" (next)="onNext()"></olympia-carousel-navs>
 </div>

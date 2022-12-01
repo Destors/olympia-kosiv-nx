@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'olympia-kosiv-nx-carousel-slide',
+  selector: 'olympia-carousel-slide',
   templateUrl: './carousel-slide.component.html',
   styleUrls: ['./carousel-slide.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

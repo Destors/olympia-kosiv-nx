@@ -18,11 +18,11 @@
     min-height: 30rem;
   }
 
-  olympia-kosiv-nx-carousel-navs {
+  olympia-carousel-navs {
     opacity: 0;
   }
 
-  &:hover olympia-kosiv-nx-carousel-navs {
+  &:hover olympia-carousel-navs {
     opacity: 1;
   }
 
@@ -38,12 +38,12 @@
   opacity: 0;
 }
 
-olympia-kosiv-nx-carousel-slide,
-olympia-kosiv-nx-carousel-dots,
-olympia-kosiv-nx-carousel-navs {
+olympia-carousel-slide,
+olympia-carousel-dots,
+olympia-carousel-navs {
   z-index: 1;
 }
 
-olympia-kosiv-nx-carousel-slide {
+olympia-carousel-slide {
   border-radius: 50px;
 }

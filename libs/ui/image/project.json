@@ -2,7 +2,7 @@
   "name": "ui-image",
   "projectType": "library",
   "sourceRoot": "libs/ui/image/src",
-  "prefix": "olympia-kosiv-nx",
+  "prefix": "olympia",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

@@ -5,7 +5,7 @@ import {
   MAIN_ROOM_PHOTOS,
   OTHER_PHOTOS,
   POWER_ROOM_PHOTOS,
-} from '@olympia-kosiv-nx/landing/photo/common';
+} from '@olympia/landing/photo/common';
 
 export interface PhotosArrModel {
   title: string;
@@ -23,7 +23,7 @@ export function getCarouselPhotos(): PhotosArrModel[] {
 }
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-photo-page',
+  selector: 'olympia-landing-photo-page',
   templateUrl: './landing-photo-page.component.html',
   styleUrls: ['./landing-photo-page.component.scss'],
 })

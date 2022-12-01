@@ -2,7 +2,7 @@
   "name": "olympia-kosiv-web",
   "projectType": "application",
   "sourceRoot": "apps/olympia-kosiv-web/src",
-  "prefix": "olympia-kosiv-nx",
+  "prefix": "olympia",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",

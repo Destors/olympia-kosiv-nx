@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {
   NAVIGATION_PATHS,
   PATHS,
-} from '@olympia-kosiv-nx/core/navigation/common';
-import { LayoutComponent } from '@olympia-kosiv-nx/ui/layout';
+} from '@olympia/core/navigation/common';
+import { LayoutComponent } from '@olympia/ui/layout';
 
 const routes: Routes = [
   {
@@ -14,28 +14,28 @@ const routes: Routes = [
       {
         path: NAVIGATION_PATHS.home,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/home/page').then(
+          import('@olympia/landing/home/page').then(
             (m) => m.LandingHomePageModule
           ),
       },
       {
         path: NAVIGATION_PATHS.photo,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/photo/page').then(
+          import('@olympia/landing/photo/page').then(
             (m) => m.LandingPhotoPageModule
           ),
       },
       {
         path: NAVIGATION_PATHS.price,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/price/page').then(
+          import('@olympia/landing/price/page').then(
             (m) => m.LandingPricePageModule
           ),
       },
       {
         path: NAVIGATION_PATHS.contact,
         loadChildren: () =>
-          import('@olympia-kosiv-nx/landing/contact/page').then(
+          import('@olympia/landing/contact/page').then(
             (m) => m.LandingContactPageModule
           ),
       },
