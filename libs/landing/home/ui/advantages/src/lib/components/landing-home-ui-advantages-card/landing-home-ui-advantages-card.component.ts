@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
+import { AdvantagesCard } from '@olympia/landing/home/common';
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-home-ui-advantages-card',
+  selector: 'olympia-landing-home-ui-advantages-card',
   templateUrl: './landing-home-ui-advantages-card.component.html',
   styleUrls: ['./landing-home-ui-advantages-card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,4 +1,4 @@
-import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
+import { AdvantagesCard } from '@olympia/landing/home/common';
 
 export const CARDS: AdvantagesCard[] = [
   {

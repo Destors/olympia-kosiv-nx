@@ -1,3 +1,15 @@
 <section>
-  <olympia-kosiv-nx-landing-home-ui-carousels-photos></olympia-kosiv-nx-landing-home-ui-carousels-photos>
+  <olympia-container>
+    <olympia-row web>
+      <olympia-column
+        *ngFor="let photosArr of carouselPhotosArr; trackBy: trackByFn"
+        [attr.web]="carouselColumCount(photosArr)"
+      >
+        <olympia-carousel
+          [images]="photosArr.imgArr"
+        ></olympia-carousel>
+        <h3>{{ photosArr.title }}</h3></olympia-column
+      >
+    </olympia-row></olympia-container
+  >
 </section>

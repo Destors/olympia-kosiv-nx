@@ -2,7 +2,7 @@
   "name": "ui-carousel",
   "projectType": "library",
   "sourceRoot": "libs/ui/carousel/src",
-  "prefix": "olympia-kosiv-nx",
+  "prefix": "olympia",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

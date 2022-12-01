@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { HeroModel, PositionType } from '@olympia-kosiv-nx/landing/home/common';
+import { HeroModel, PositionType } from '@olympia/landing/home/common';
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-home-page',
+  selector: 'olympia-landing-home-page',
   templateUrl: './landing-home-page.component.html',
   styleUrls: ['./landing-home-page.component.scss'],
 })

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { CoreIconService } from '@olympia-kosiv-nx/core/icon';
-import { AdvantagesCard } from '@olympia-kosiv-nx/landing/home/common';
+import { CoreIconService } from '@olympia/core/icon';
+import { AdvantagesCard } from '@olympia/landing/home/common';
 
 import { CARDS } from './common/landing-home-ui-advantages.cards';
 import { ICONS } from './common/landing-home-ui-advantages.icons';
 
 @Component({
-  selector: 'olympia-kosiv-nx-landing-home-ui-advantages',
+  selector: 'olympia-landing-home-ui-advantages',
   templateUrl: './landing-home-ui-advantages.component.html',
   styleUrls: ['./landing-home-ui-advantages.component.scss'],
 })

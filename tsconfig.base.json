@@ -15,63 +15,60 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@olympia-kosiv-nx/core/icon": ["libs/core/icon/src/index.ts"],
-      "@olympia-kosiv-nx/core/layout/service": [
+      "@olympia/core/icon": ["libs/core/icon/src/index.ts"],
+      "@olympia/core/layout/service": [
         "libs/core/layout/service/src/index.ts"
       ],
-      "@olympia-kosiv-nx/core/navigation/common": [
+      "@olympia/core/navigation/common": [
         "libs/core/navigation/common/src/index.ts"
       ],
-      "@olympia-kosiv-nx/core/theme/service": [
+      "@olympia/core/theme/service": [
         "libs/core/theme/service/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/contact/page": [
+      "@olympia/landing/contact/page": [
         "libs/landing/contact/page/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/common": [
+      "@olympia/landing/home/common": [
         "libs/landing/home/common/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/page": [
+      "@olympia/landing/home/page": [
         "libs/landing/home/page/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/ui/advantages": [
+      "@olympia/landing/home/ui/advantages": [
         "libs/landing/home/ui/advantages/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/ui/hero-img": [
+      "@olympia/landing/home/ui/hero-img": [
         "libs/landing/home/ui/hero-img/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/home/ui/main-cta": [
+      "@olympia/landing/home/ui/main-cta": [
         "libs/landing/home/ui/main-cta/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/photo/common": [
+      "@olympia/landing/photo/common": [
         "libs/landing/photo/common/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/photo/page": [
+      "@olympia/landing/photo/page": [
         "libs/landing/photo/page/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/photo/ui": [
-        "libs/landing/photo/ui/src/index.ts"
-      ],
-      "@olympia-kosiv-nx/landing/price/api": [
+      "@olympia/landing/price/api": [
         "libs/landing/price/api/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/price/common": [
+      "@olympia/landing/price/common": [
         "libs/landing/price/common/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/price/page": [
+      "@olympia/landing/price/page": [
         "libs/landing/price/page/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/price/ui/card": [
+      "@olympia/landing/price/ui/card": [
         "libs/landing/price/ui/card/src/index.ts"
       ],
-      "@olympia-kosiv-nx/landing/price/ui/pipes": [
+      "@olympia/landing/price/ui/pipes": [
         "libs/landing/price/ui/pipes/src/index.ts"
       ],
-      "@olympia-kosiv-nx/ui/carousel": ["libs/ui/carousel/src/index.ts"],
-      "@olympia-kosiv-nx/ui/container": ["libs/ui/container/src/index.ts"],
-      "@olympia-kosiv-nx/ui/grid": ["libs/ui/grid/src/index.ts"],
-      "@olympia-kosiv-nx/ui/image": ["libs/ui/image/src/index.ts"],
-      "@olympia-kosiv-nx/ui/layout": ["libs/ui/layout/src/index.ts"]
+      "@olympia/ui/carousel": ["libs/ui/carousel/src/index.ts"],
+      "@olympia/ui/container": ["libs/ui/container/src/index.ts"],
+      "@olympia/ui/grid": ["libs/ui/grid/src/index.ts"],
+      "@olympia/ui/image": ["libs/ui/image/src/index.ts"],
+      "@olympia/ui/layout": ["libs/ui/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

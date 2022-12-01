@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CoreThemeService } from '@olympia-kosiv-nx/core/theme/service';
+import { CoreThemeService } from '@olympia/core/theme/service';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'olympia-kosiv-nx-header',
+  selector: 'olympia-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })

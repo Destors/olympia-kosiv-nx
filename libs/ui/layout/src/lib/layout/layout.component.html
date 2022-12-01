@@ -4,14 +4,14 @@
 >
   <ng-container [ngSwitch]="layoutType$ | async">
     <ng-container *ngSwitchDefault>
-      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+      <olympia-header></olympia-header>
       <main automation-id="handset">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>
-      <olympia-kosiv-nx-menu></olympia-kosiv-nx-menu>
+      <olympia-menu></olympia-menu>
     </ng-container>
     <ng-container *ngSwitchCase="breakpoints.Tablet">
-      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+      <olympia-header></olympia-header>
       <main automation-id="tablet">
         <ng-container
           *ngTemplateOutlet="template; context: { mode: 'fluid' }"
@@ -19,7 +19,7 @@
       </main>
     </ng-container>
     <ng-container *ngSwitchCase="breakpoints.Web">
-      <olympia-kosiv-nx-header></olympia-kosiv-nx-header>
+      <olympia-header></olympia-header>
       <main automation-id="web">
         <ng-container *ngTemplateOutlet="template"></ng-container>
       </main>

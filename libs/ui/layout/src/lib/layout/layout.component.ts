@@ -1,11 +1,11 @@
 import { Breakpoints } from '@angular/cdk/layout';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { LayoutService } from '@olympia-kosiv-nx/core/layout/service';
-import { CoreThemeService } from '@olympia-kosiv-nx/core/theme/service';
+import { LayoutService } from '@olympia/core/layout/service';
+import { CoreThemeService } from '@olympia/core/theme/service';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'olympia-kosiv-nx-layout',
+  selector: 'olympia-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

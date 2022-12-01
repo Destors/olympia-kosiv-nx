@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "olympia-kosiv-nx",
+            "prefix": "olympia",
             "style": "kebab-case"
           }
         ]

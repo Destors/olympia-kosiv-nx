@@ -3,7 +3,7 @@ import {
   AngularFirestore,
   AngularFirestoreCollection,
 } from '@angular/fire/compat/firestore';
-import { Prices } from '@olympia-kosiv-nx/landing/price/common';
+import { Prices } from '@olympia/landing/price/common';
 import { Observable, of } from 'rxjs';
 
 @Injectable()
