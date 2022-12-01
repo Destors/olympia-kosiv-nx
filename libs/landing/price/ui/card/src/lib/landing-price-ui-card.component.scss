@@ -10,12 +10,18 @@
     font-weight: 700;
   }
   & .card__price {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(142, 142, 142);
   }
   & .card__desc {
     font-size: 1rem;
     line-height: 150%;
     color: #d4d4d4;
+  }
+
+  &.card--popular {
+    background-color: #1f2c3d;
   }
 }
 

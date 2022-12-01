@@ -7,7 +7,7 @@
 >
 
 <ng-template #dataReady
-  ><div class="card">
+  ><div class="card" [ngClass]="getClassOfCard(price.name)">
     <h3 class="card__header">{{ price.name }}</h3>
     <p class="card__price">
       {{ price.price | landingPriceUiPipesCurrencyUah }}

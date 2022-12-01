@@ -9,11 +9,11 @@ import { map, Observable } from 'rxjs';
   styleUrls: ['./landing-price-page.component.scss'],
 })
 export class LandingPricePageComponent {
+  preloadingSkeletonCount = new Array(4);
+
   prices$: Observable<Prices[] | undefined>;
   pricesWithCoach$: Observable<Prices[] | undefined>;
   pricesWithoutCoach$: Observable<Prices[] | undefined>;
-
-  preloadingSkeletonCount = new Array(4);
 
   constructor(private pricePageService: LandingPricePageApiService) {
     this.prices$ = this.pricePageService.getAllPrices();
