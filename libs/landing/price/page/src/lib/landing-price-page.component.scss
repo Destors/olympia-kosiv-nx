@@ -1,31 +1,22 @@
 @use '../../../../../ui/stylesheets/mixins.scss' as store-mixins;
 
-.card-list__item {
-  margin-bottom: 10px;
-}
-
-@include store-mixins.media-tablet-up {
-  .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-
-  .card-list__item {
-    flex: 0 1 50%;
-    padding: 1rem 0.5em;
-  }
-}
-
 .lead-logo {
   margin-top: 3rem;
   margin-bottom: 2rem;
   & h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
   & p {
     font-size: 1.2rem;
   }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+olympia-column {
+  margin-bottom: 35px;
 }

@@ -1,10 +1,22 @@
 .card {
-  padding: 20px 50px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
-  width: 100%;
-  border: 2px solid rgb(212, 212, 212);
+  border: 1px solid #434343;
   border-radius: 10px;
-  margin-bottom: 20px;
+  padding: 20px 20px;
+  background-color: #282828;
+  height: 100%;
+  width: 100%;
+  & .card__header {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  & .card__price {
+    font-size: 1.2rem;
+  }
+  & .card__desc {
+    font-size: 1rem;
+    line-height: 150%;
+    color: #d4d4d4;
+  }
 }
 
 .card.card--skeleton {

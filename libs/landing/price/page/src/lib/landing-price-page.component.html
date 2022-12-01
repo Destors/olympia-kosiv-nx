@@ -1,10 +1,10 @@
 <olympia-container>
-  <div class="lead-logo">
-    <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
-    <p>Ознайомтесь зі списком наших абонементів</p>
-  </div>
   <section>
-    <h2>Тренажерний зал:</h2>
+    <div class="lead-logo">
+      <h1>Готові почати тренуватися в Olympia Kosiv?</h1>
+      <p>Ознайомтесь зі списком наших абонементів</p>
+    </div>
+    <h2>Самостійні занаття:</h2>
     <ng-container *ngIf="prices$ | async as prices; else loadingPrices">
       <olympia-row tablet>
         <olympia-column tablet="4" web="4" *ngFor="let price of prices"
@@ -26,5 +26,8 @@
           ></olympia-landing-price-ui-card
         ></olympia-column>
       </olympia-row>
-    </ng-template></section
-></olympia-container>
+    </ng-template>
+
+    <h2>Заняття з тренером:</h2>
+  </section></olympia-container
+>
