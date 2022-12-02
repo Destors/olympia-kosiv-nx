@@ -10,7 +10,7 @@
   ><div class="card" [ngClass]="getClassOfCard(price.name)">
     <h3 class="card__header">{{ price.name }}</h3>
     <p class="card__price">
-      {{ price.price | landingPriceUiPipesCurrencyUah }}
+      {{ price.price | CurrencyUahPipe }}
     </p>
     <p class="card__desc">{{ price.desc }}</p>
   </div></ng-template

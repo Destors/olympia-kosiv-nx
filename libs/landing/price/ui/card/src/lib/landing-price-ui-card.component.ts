@@ -11,16 +11,15 @@ export class LandingPriceUiCardComponent {
   @Input() price!: Prices;
   @Input() preloadingSkeleton!: boolean;
 
-  getClassOfCard(val: string) {
-    switch (val) {
-      case '8 Занять':
-      case '12 Занять':
-      case '8 Занять з Тренером':
-      case '12 Занять з Тренером':
-        return 'card--popular';
-      default:
-        return null;
-    }
+  public getClassOfCard(val: string): Record<string, boolean> {
+    return {
+      popular: [
+        '8 Занять',
+        '12 Занять',
+        '8 Занять з Тренером',
+        '12 Занять з Тренером',
+      ].includes(val),
+    };
   }
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
