@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CoreIconService } from '@olympia/core/icon';
 import { AdvantagesCard } from '@olympia/landing/home/common';
 
-import { CARDS } from './common/landing-home-ui-advantages.cards';
-import { ICONS } from './common/landing-home-ui-advantages.icons';
+import { CARDS } from './data/landing-home-ui-advantages.cards';
+import { ICONS } from './data/landing-home-ui-advantages.icons';
 
 @Component({
   selector: 'olympia-landing-home-ui-advantages',
