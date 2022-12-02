@@ -11,18 +11,18 @@ import { map, Observable } from 'rxjs';
 export class LandingPricePageComponent {
   preloadingSkeletonCount = new Array(4);
 
-  prices$: Observable<Prices[] | undefined>;
+  allPricesArr$: Observable<Prices[] | undefined>;
   pricesWithCoach$: Observable<Prices[] | undefined>;
   pricesWithoutCoach$: Observable<Prices[] | undefined>;
 
   constructor(private pricePageService: LandingPricePageApiService) {
-    this.prices$ = this.pricePageService.getAllPrices();
+    this.allPricesArr$ = this.pricePageService.getAllPricesArr();
     this.pricesWithCoach$ = this.filterPricesWithCoach(true);
     this.pricesWithoutCoach$ = this.filterPricesWithCoach(false);
   }
 
   filterPricesWithCoach(coach: boolean): Observable<Prices[] | undefined> {
-    return this.prices$.pipe(
+    return this.allPricesArr$.pipe(
       map((val) =>
         val
           ?.sort((a, b) => {
