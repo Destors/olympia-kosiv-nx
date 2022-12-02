@@ -4,3 +4,8 @@ export interface Prices {
   desc: string;
   withCoach: boolean;
 }
+
+export enum CoachStatus {
+  WithCoach = 'withCoach',
+  WithoutCoach = 'withoutCoach',
+}

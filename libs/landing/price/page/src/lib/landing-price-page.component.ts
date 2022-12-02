@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LandingPricePageApiService } from '@olympia/landing/price/api';
-import { Prices } from '@olympia/landing/price/common';
-import { map, Observable } from 'rxjs';
+import { CoachStatus, Prices } from '@olympia/landing/price/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'olympia-landing-price-page',
@@ -17,19 +17,14 @@ export class LandingPricePageComponent {
 
   constructor(private pricePageService: LandingPricePageApiService) {
     this.allPricesArr$ = this.pricePageService.getAllPricesArr();
-    this.pricesWithCoach$ = this.filterPricesWithCoach(true);
-    this.pricesWithoutCoach$ = this.filterPricesWithCoach(false);
-  }
 
-  filterPricesWithCoach(coach: boolean): Observable<Prices[] | undefined> {
-    return this.allPricesArr$.pipe(
-      map((val) =>
-        val
-          ?.sort((a, b) => {
-            return a.price < b.price ? -1 : 1;
-          })
-          ?.filter((x) => (coach ? x.withCoach : !x.withCoach))
-      )
+    this.pricesWithCoach$ = this.pricePageService.filterPricesWithCoach(
+      this.allPricesArr$,
+      CoachStatus.WithCoach
+    );
+    this.pricesWithoutCoach$ = this.pricePageService.filterPricesWithCoach(
+      this.allPricesArr$,
+      CoachStatus.WithoutCoach
     );
   }
 }
