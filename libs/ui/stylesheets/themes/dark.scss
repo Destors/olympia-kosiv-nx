@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+$my-app-dark-primary: mat.define-palette(mat.$blue-grey-palette);
+$my-app-dark-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+$my-app-dark-warn: mat.define-palette(mat.$deep-orange-palette);
+$my-app-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $my-app-dark-primary,
+      accent: $my-app-dark-accent,
+      warn: $my-app-dark-warn,
+    ),
+  )
+);
+
+$my-app-dark-gray: mat.define-palette(mat.$grey-palette);
+$my-app-dark-info: mat.define-palette(mat.$light-blue-palette);
+
+$my-app-dark-variants: (
+  gray: $my-app-dark-gray,
+  info: $my-app-dark-info,
+);
+
+.dark-theme {
+  @include mat.core-color($my-app-dark-theme);
+  @include mat.button-color($my-app-dark-theme);
+}
+
+.dark-theme .mat-app-background,
+.dark-theme.mat-app-background {
+  background-color: mat.get-color-from-palette($my-app-dark-gray, 900);
+}

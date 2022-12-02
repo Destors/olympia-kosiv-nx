@@ -1,5 +1,12 @@
 @use '@angular/material' as mat;
+@use './themes/light';
+@use './themes/dark';
 @use 'variables' as store;
+@use './typography/config' as typography;
+
+@include mat.core-theme(light.$my-app-light-theme);
+@include mat.core(typography.$my-app-typography);
+@include mat.core();
 
 *,
 ::after,
