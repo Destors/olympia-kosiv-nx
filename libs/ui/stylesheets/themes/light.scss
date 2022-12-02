@@ -20,6 +20,6 @@ $my-app-light-success: mat.define-palette(mat.$green-palette);
 $my-app-light-info: mat.define-palette(mat.$blue-palette);
 
 $my-app-light-variants: (
-  success: $my-app-light-success,
+  gray: $my-app-light-success,
   info: $my-app-light-info,
 );
