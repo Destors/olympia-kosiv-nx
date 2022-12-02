@@ -1,17 +1,34 @@
-olympia-nav-link {
-  & a {
-    text-decoration: none;
-    margin: 0px 8px;
-    padding-bottom: 3px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: inherit;
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
 
-    &.is-active {
-      border-bottom: 2px solid white;
+:host {
+  display: flex;
+}
+
+olympia-nav-link {
+  & .nav-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & mat-icon {
+      display: inline-block;
+      margin-bottom: 5px;
+      @include store-mixins.media-tablet-up() {
+        display: none;
+      }
     }
-  }
-  & mat-icon {
-    display: none;
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      margin: 0px 8px;
+      padding-bottom: 3px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: inherit;
+
+      &.is-active {
+        border-bottom: 2px solid white;
+      }
+    }
   }
 }

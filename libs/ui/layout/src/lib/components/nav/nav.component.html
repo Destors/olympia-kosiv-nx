@@ -1,12 +1,16 @@
 <olympia-nav-link *ngFor="let link of links; trackBy: trackByFn">
-  <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
-  <a
-    #rla="routerLinkActive"
-    routerLinkActive
-    [class.is-active]="rla.isActive"
-    [routerLinkActiveOptions]="link.routerLinkActiveOptions || { exact: false }"
-    [routerLink]="link.route"
-  >
-    {{ link.label }}
-  </a>
+  <div class="nav-link-wrapper">
+    <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
+    <a
+      #rla="routerLinkActive"
+      routerLinkActive
+      [class.is-active]="rla.isActive"
+      [routerLinkActiveOptions]="
+        link.routerLinkActiveOptions || { exact: false }
+      "
+      [routerLink]="link.route"
+    >
+      {{ link.label }}
+    </a>
+  </div>
 </olympia-nav-link>

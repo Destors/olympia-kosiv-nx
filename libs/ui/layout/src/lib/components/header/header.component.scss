@@ -18,7 +18,7 @@ header {
   & olympia-nav {
     display: none;
     @include store-mixins.media-tablet-up() {
-      display: block;
+      display: flex;
     }
   }
 }
