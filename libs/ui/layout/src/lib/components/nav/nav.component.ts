@@ -1,33 +1,13 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { CoreIconService } from '@olympia/core/icon';
 import {
   NavigationLink,
   NavigationPaths,
   PATHS,
 } from '@olympia/core/navigation/common';
 
-export function getLinks(paths: NavigationPaths): NavigationLink[] {
-  return [
-    {
-      route: paths.home,
-      label: 'Головна',
-      routerLinkActiveOptions: {
-        exact: true,
-      },
-    },
-    {
-      route: paths.photo,
-      label: 'Фото',
-    },
-    {
-      route: paths.price,
-      label: 'Ціни',
-    },
-    {
-      route: paths.contact,
-      label: 'Контакти',
-    },
-  ];
-}
+import { NAV_ICONS } from './data/nav.icons';
+import { getLinks } from './data/nav.links';
 
 @Component({
   selector: 'olympia-nav',
@@ -36,7 +16,14 @@ export function getLinks(paths: NavigationPaths): NavigationLink[] {
 })
 export class NavComponent implements OnInit {
   links!: NavigationLink[];
-  constructor(@Inject(PATHS) public readonly paths: NavigationPaths) {}
+  constructor(
+    @Inject(PATHS) public readonly paths: NavigationPaths,
+    private readonly iconService: CoreIconService
+  ) {
+    for (const icon of NAV_ICONS) {
+      this.iconService.add(icon.name, icon.source);
+    }
+  }
 
   ngOnInit(): void {
     this.links = getLinks(this.paths);

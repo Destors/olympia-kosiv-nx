@@ -6,12 +6,12 @@ olympia-nav-link {
     font-size: 1rem;
     font-weight: 600;
     color: inherit;
-    &:hover {
-      color: gray;
-    }
 
     &.is-active {
       border-bottom: 2px solid white;
     }
+  }
+  & mat-icon {
+    display: none;
   }
 }
