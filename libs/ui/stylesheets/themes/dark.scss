@@ -1,5 +1,7 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
+@use '../typography/config' as typography;
+@use '../components';
 
 $my-app-dark-primary: mat.define-palette(mat.$blue-grey-palette);
 $my-app-dark-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
@@ -25,6 +27,11 @@ $my-app-dark-variants: (
 .dark-theme {
   @include mat.core-color($my-app-dark-theme);
   @include mat.button-color($my-app-dark-theme);
+  @include components.theme(
+    $my-app-dark-theme,
+    typography.$my-app-typography,
+    $my-app-dark-variants
+  );
 }
 
 .dark-theme .mat-app-background,
