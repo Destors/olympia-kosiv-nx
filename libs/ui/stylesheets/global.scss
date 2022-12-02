@@ -10,8 +10,7 @@
 @include mat.core();
 @include components.theme(
   light.$my-app-light-theme,
-  typography.$my-app-typography,
-  light.$my-app-light-variants
+  typography.$my-app-typography
 );
 *,
 ::after,

@@ -15,11 +15,3 @@ $my-app-light-theme: mat.define-light-theme(
     ),
   )
 );
-
-$my-app-light-success: mat.define-palette(mat.$green-palette);
-$my-app-light-info: mat.define-palette(mat.$blue-palette);
-
-$my-app-light-variants: (
-  gray: $my-app-light-success,
-  info: $my-app-light-info,
-);
