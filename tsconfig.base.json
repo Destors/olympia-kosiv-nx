@@ -16,24 +16,16 @@
     "baseUrl": ".",
     "paths": {
       "@olympia/core/icon": ["libs/core/icon/src/index.ts"],
-      "@olympia/core/layout/service": [
-        "libs/core/layout/service/src/index.ts"
-      ],
+      "@olympia/core/layout/service": ["libs/core/layout/service/src/index.ts"],
       "@olympia/core/navigation/common": [
         "libs/core/navigation/common/src/index.ts"
       ],
-      "@olympia/core/theme/service": [
-        "libs/core/theme/service/src/index.ts"
-      ],
+      "@olympia/core/theme/service": ["libs/core/theme/service/src/index.ts"],
       "@olympia/landing/contact/page": [
         "libs/landing/contact/page/src/index.ts"
       ],
-      "@olympia/landing/home/common": [
-        "libs/landing/home/common/src/index.ts"
-      ],
-      "@olympia/landing/home/page": [
-        "libs/landing/home/page/src/index.ts"
-      ],
+      "@olympia/landing/home/common": ["libs/landing/home/common/src/index.ts"],
+      "@olympia/landing/home/page": ["libs/landing/home/page/src/index.ts"],
       "@olympia/landing/home/ui/advantages": [
         "libs/landing/home/ui/advantages/src/index.ts"
       ],
@@ -43,21 +35,12 @@
       "@olympia/landing/home/ui/main-cta": [
         "libs/landing/home/ui/main-cta/src/index.ts"
       ],
-      "@olympia/landing/photo/common": [
-        "libs/landing/photo/common/src/index.ts"
-      ],
-      "@olympia/landing/photo/page": [
-        "libs/landing/photo/page/src/index.ts"
-      ],
-      "@olympia/landing/price/api": [
-        "libs/landing/price/api/src/index.ts"
-      ],
+      "@olympia/landing/photo/page": ["libs/landing/photo/page/src/index.ts"],
+      "@olympia/landing/price/api": ["libs/landing/price/api/src/index.ts"],
       "@olympia/landing/price/common": [
         "libs/landing/price/common/src/index.ts"
       ],
-      "@olympia/landing/price/page": [
-        "libs/landing/price/page/src/index.ts"
-      ],
+      "@olympia/landing/price/page": ["libs/landing/price/page/src/index.ts"],
       "@olympia/landing/price/ui/card": [
         "libs/landing/price/ui/card/src/index.ts"
       ],
