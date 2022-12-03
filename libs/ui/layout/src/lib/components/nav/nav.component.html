@@ -1,8 +1,7 @@
 <olympia-nav-link *ngFor="let link of links; trackBy: trackByFn">
   <a
     #rla="routerLinkActive"
-    routerLinkActive
-    [class.is-active]="rla.isActive"
+    [routerLinkActive]="['is-active']"
     [routerLinkActiveOptions]="link.routerLinkActiveOptions || { exact: false }"
     [routerLink]="link.route"
   >

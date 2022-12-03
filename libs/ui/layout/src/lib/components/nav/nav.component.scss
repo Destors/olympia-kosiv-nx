@@ -24,14 +24,14 @@ olympia-nav-link {
     justify-content: center;
     align-self: center;
     text-decoration: none;
-    margin: 0px 8px;
+    margin: 0px 10px;
     padding-bottom: 3px;
     font-size: 1rem;
     font-weight: 600;
-    color: inherit;
+    color: rgb(123, 123, 123);
 
     &.is-active {
-      border-bottom: 2px solid white;
+      color: inherit;
     }
   }
 }
