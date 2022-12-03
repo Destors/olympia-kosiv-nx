@@ -13,12 +13,16 @@ olympia-nav-link {
     display: inline-block;
     width: 30px;
     height: 30px;
+    margin: 0 auto;
     @include store-mixins.media-tablet-up() {
       display: none;
     }
   }
   & a {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     text-decoration: none;
     margin: 0px 8px;
     padding-bottom: 3px;

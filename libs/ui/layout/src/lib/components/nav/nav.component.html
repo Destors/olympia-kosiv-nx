@@ -1,5 +1,4 @@
 <olympia-nav-link *ngFor="let link of links; trackBy: trackByFn">
-  <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
   <a
     #rla="routerLinkActive"
     routerLinkActive
@@ -7,6 +6,7 @@
     [routerLinkActiveOptions]="link.routerLinkActiveOptions || { exact: false }"
     [routerLink]="link.route"
   >
-    {{ link.label }}
+    <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
+    <span> {{ link.label }}</span>
   </a>
 </olympia-nav-link>
