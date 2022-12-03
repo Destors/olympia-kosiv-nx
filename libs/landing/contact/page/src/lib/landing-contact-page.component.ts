@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { HeroModel } from '@olympia/landing/home/common';
 
-export const HEROADDRESS = {
-  img: '../assets/landing/img/gymMapCropped.jpg',
-  title: 'Наша адресса',
-  desc: 'Україна, місто Косів, Івано-Франківська область, вулиця',
-};
+import { HERO_ADDRESS } from './data/landing-contact-page.data';
 
 @Component({
   selector: 'olympia-landing-contact-page',
@@ -16,6 +12,6 @@ export class LandingContactPageComponent {
   heroAddress: HeroModel;
 
   constructor() {
-    this.heroAddress = HEROADDRESS;
+    this.heroAddress = HERO_ADDRESS;
   }
 }

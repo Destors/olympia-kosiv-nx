@@ -4,12 +4,18 @@ h1 {
 
 p {
   font-size: 1.2rem;
+  & span.secondary {
+    color: gray !important;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
   font-size: 1.2rem;
+  &:hover {
+    color: gray;
+  }
 }
 
 img {

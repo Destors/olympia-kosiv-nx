@@ -3,19 +3,17 @@
     <img
       [ngSrc]="heroModel.img"
       alt=""
-      width="2400"
-      height="1600"
+      width="800"
+      height="400"
       ngSrcset="100w, 200w, 300w"
       sizes="50vw"
       priority
     />
   </olympia-column>
-  <olympia-column
-    tablet="6"
-    [ngClass]="{ 'title-left': position === 'left' }"
+  <olympia-column tablet="6" [ngClass]="{ 'title-left': position === 'left' }"
     ><div>
       <h2>{{ heroModel.title }}</h2>
-      <p>{{ heroModel.desc }}</p>
+      <p [innerHTML]="heroModel.desc"></p>
     </div>
   </olympia-column>
 </olympia-row>
