@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { LandingHomeApiModule } from '@olympia/landing/home/api';
 
 import { LandingCreateFormComponent } from './landing-create-form.component';
 
@@ -14,6 +15,7 @@ import { LandingCreateFormComponent } from './landing-create-form.component';
     FormsModule,
     MatInputModule,
     MatButtonModule,
+    LandingHomeApiModule,
   ],
   exports: [LandingCreateFormComponent],
 })

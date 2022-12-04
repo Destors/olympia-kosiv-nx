@@ -24,6 +24,7 @@
       "@olympia/landing/contact/page": [
         "libs/landing/contact/page/src/index.ts"
       ],
+      "@olympia/landing/home/api": ["libs/landing/home/api/src/index.ts"],
       "@olympia/landing/home/common": ["libs/landing/home/common/src/index.ts"],
       "@olympia/landing/home/page": ["libs/landing/home/page/src/index.ts"],
       "@olympia/landing/home/ui/advantages": [
