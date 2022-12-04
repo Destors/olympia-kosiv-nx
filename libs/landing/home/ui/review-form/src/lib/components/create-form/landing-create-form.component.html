@@ -1,0 +1,28 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>Ім'я</mat-label>
+    <input
+      type="text"
+      placeholder="Ваше Ім'я"
+      matInput
+      formControlName="name"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Відгук</mat-label>
+    <input
+      type="text"
+      placeholder="Відгук або побажання"
+      matInput
+      formControlName="name"
+    />
+  </mat-form-field>
+  <button
+    mat-raised-button
+    type="submit"
+    [disabled]="submitted"
+    color="primary"
+  >
+    Відправити
+  </button>
+</form>
