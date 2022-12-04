@@ -11,7 +11,7 @@ import { HERO_SPORT_FOOD, HERO_TRAINER } from './data/landing-home-page.heros';
 export class LandingHomePageComponent {
   heroTrainer: HeroModel;
   heroSportFood: HeroModel;
-  positionType: typeof HeroImgPositionSide = HeroImgPositionSide;
+  imgPositionSide: typeof HeroImgPositionSide = HeroImgPositionSide;
 
   constructor() {
     this.heroTrainer = HERO_TRAINER;
