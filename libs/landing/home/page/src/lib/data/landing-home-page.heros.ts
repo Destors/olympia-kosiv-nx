@@ -1,7 +1,7 @@
 import { HeroModel } from '@olympia/landing/home/common';
 
 export const HERO_TRAINER: HeroModel = {
-  img: '../assets/landing/img/heroTrainer.jpg',
+  img: '../assets/landing/img/heroTrainer.JPG',
   title: 'Персональні тренування',
   // eslint-disable-next-line max-len
   desc: 'Ви можете тренуватися самостійно або під наглядом профессійного тренера. Отримайте індивідеальний план тренування та харчування.',
