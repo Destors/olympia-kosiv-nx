@@ -36,6 +36,11 @@ body {
     sans-serif;
 }
 
+//temp extra padding on main, for mobile fixed menu
+main {
+  padding-bottom: 5rem;
+}
+
 .mat-tab-labels {
   .mat-tab-label,
   .mat-tab-link {
