@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { HeroModel, PositionType } from '@olympia/landing/home/common';
+import { HeroImgPositionSide, HeroModel } from '@olympia/landing/home/common';
 
 @Component({
   selector: 'olympia-landing-home-ui-hero-img.',
@@ -9,7 +9,7 @@ import { HeroModel, PositionType } from '@olympia/landing/home/common';
 })
 export class LandingHomeUiHeroImgComponent {
   @Input() heroModel!: HeroModel;
-  @Input() position!: PositionType;
+  @Input() imgPosition!: HeroImgPositionSide;
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 }

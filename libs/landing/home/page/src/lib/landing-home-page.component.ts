@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { HeroModel, PositionType } from '@olympia/landing/home/common';
+import { HeroImgPositionSide, HeroModel } from '@olympia/landing/home/common';
+
+import { HERO_SPORT_FOOD, HERO_TRAINER } from './data/landing-home-page.heros';
 
 @Component({
   selector: 'olympia-landing-home-page',
@@ -8,14 +10,11 @@ import { HeroModel, PositionType } from '@olympia/landing/home/common';
 })
 export class LandingHomePageComponent {
   heroTrainer: HeroModel;
-  positionType: typeof PositionType = PositionType;
+  heroSportFood: HeroModel;
+  positionType: typeof HeroImgPositionSide = HeroImgPositionSide;
 
   constructor() {
-    this.heroTrainer = {
-      img: '../assets/landing/img/heroTrainer.jpg',
-      title: 'Персональні тренування',
-      // eslint-disable-next-line max-len
-      desc: 'Ви можете тренуватися самостійно або під наглядом профессійного тренера. Отримайте індивідеальний план тренування та харчування.',
-    };
+    this.heroTrainer = HERO_TRAINER;
+    this.heroSportFood = HERO_SPORT_FOOD;
   }
 }

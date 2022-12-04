@@ -10,11 +10,21 @@
   </olympia-container>
 </section>
 
-<!-- landing-home-ui-hero-img -->
+<!-- landing-home-ui-hero-img(sportFood) -->
+<section>
+  <olympia-container>
+    <olympia-landing-home-ui-hero-img
+      [heroModel]="heroSportFood"
+    ></olympia-landing-home-ui-hero-img>
+  </olympia-container>
+</section>
+
+<!-- landing-home-ui-hero-img(trainer) -->
 <section>
   <olympia-container>
     <olympia-landing-home-ui-hero-img
       [heroModel]="heroTrainer"
+      [imgPosition]="positionType.Left"
     ></olympia-landing-home-ui-hero-img>
   </olympia-container>
 </section>

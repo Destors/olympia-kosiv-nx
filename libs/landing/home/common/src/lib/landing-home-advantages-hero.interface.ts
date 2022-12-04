@@ -4,7 +4,7 @@ export interface HeroModel {
   desc: string;
 }
 
-export enum PositionType {
+export enum HeroImgPositionSide {
   Left = 'left',
   Right = 'right',
 }

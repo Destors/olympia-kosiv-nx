@@ -2,6 +2,7 @@
   <olympia-column tablet="6">
     <img
       [ngSrc]="heroModel.img"
+      [ngClass]="{ 'title-left': imgPosition === 'left' }"
       alt=""
       width="800"
       height="400"
@@ -10,7 +11,9 @@
       priority
     />
   </olympia-column>
-  <olympia-column tablet="6" [ngClass]="{ 'title-left': position === 'left' }"
+  <olympia-column
+    tablet="6"
+    [ngClass]="{ 'title-left': imgPosition === 'left' }"
     ><div>
       <h2>{{ heroModel.title }}</h2>
       <p [innerHTML]="heroModel.desc"></p>
