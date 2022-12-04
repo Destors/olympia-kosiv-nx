@@ -9,10 +9,14 @@ import {
 export class LandingReviewApiService {
   constructor(private db: AngularFirestore) {}
 
-  addReview(form: ReviewFormModel) {
-    this.db.collection<ReviewFormModel>(ReviewCollection.Reviews).add({
-      name: form.name,
-      comment: form.comment,
-    });
+  public addReview(form: ReviewFormModel) {
+    try {
+      this.db.collection<ReviewFormModel>(ReviewCollection.Reviews).add({
+        name: form.name,
+        comment: form.comment,
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 }
