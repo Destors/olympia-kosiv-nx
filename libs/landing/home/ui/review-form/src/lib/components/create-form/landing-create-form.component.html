@@ -1,3 +1,4 @@
+<h3>Напишіть відгук</h3>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <mat-form-field appearance="outline">
     <mat-label>Ім'я</mat-label>
@@ -10,18 +11,22 @@
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Відгук</mat-label>
-    <input
+    <textarea
       type="text"
+      textarea
       placeholder="Відгук або побажання"
       matInput
       formControlName="comment"
-    />
+      cdkTextareaAutosize
+      cdkAutosizeMinRows="4"
+      cdkAutosizeMaxRows="6"
+    ></textarea>
   </mat-form-field>
   <button
     mat-raised-button
     type="submit"
     [disabled]="submitted"
-    color="primary"
+    color="accent"
   >
     Відправити
   </button>
