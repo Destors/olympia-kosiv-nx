@@ -5,9 +5,8 @@ import {
   OnInit,
 } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { LandingReviewApiService } from '@olympia/landing/home/api';
 import { ReviewFormField } from '@olympia/landing/home/common';
-// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { LandingReviewApiService } from 'libs/landing/home/api/src/lib/landing-review-api.service';
 
 @Component({
   selector: 'olympia-landing-create-form',
