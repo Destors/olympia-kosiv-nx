@@ -12,7 +12,7 @@ export class LandingPricePageApiService {
   public getAllPricesArr(): Observable<Prices[] | undefined> {
     try {
       this.pricesArr$ = this.db
-        .collection<Prices>(Collection.Landing, (ref) => ref)
+        .collection<Prices>(Collection.Landing)
         .valueChanges();
     } catch (e) {
       console.warn(e);
