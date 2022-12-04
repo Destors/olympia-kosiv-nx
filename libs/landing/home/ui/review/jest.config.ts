@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'landing-home-ui-review-form',
+  displayName: 'landing-home-ui-review',
   preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../../coverage/libs/landing/home/ui/review-form',
+  coverageDirectory: '../../../../../coverage/libs/landing/home/ui/review',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

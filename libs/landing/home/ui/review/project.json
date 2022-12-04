@@ -1,15 +1,15 @@
 {
-  "name": "landing-home-ui-review-form",
   "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "name": "landing-home-ui-review",
   "projectType": "library",
-  "sourceRoot": "libs/landing/home/ui/review-form/src",
+  "sourceRoot": "libs/landing/home/ui/review/src",
   "prefix": "olympia",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/landing/home/ui/review-form/jest.config.ts",
+        "jestConfig": "libs/landing/home/ui/review/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -17,8 +17,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/landing/home/ui/review-form/**/*.ts",
-          "libs/landing/home/ui/review-form/**/*.html"
+          "libs/landing/home/ui/review/**/*.ts",
+          "libs/landing/home/ui/review/**/*.html"
         ]
       }
     }

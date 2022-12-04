@@ -36,8 +36,8 @@
       "@olympia/landing/home/ui/main-cta": [
         "libs/landing/home/ui/main-cta/src/index.ts"
       ],
-      "@olympia/landing/home/ui/review-form": [
-        "libs/landing/home/ui/review-form/src/index.ts"
+      "@olympia/landing/home/ui/review": [
+        "libs/landing/home/ui/review/src/index.ts"
       ],
       "@olympia/landing/photo/page": ["libs/landing/photo/page/src/index.ts"],
       "@olympia/landing/price/api": ["libs/landing/price/api/src/index.ts"],
