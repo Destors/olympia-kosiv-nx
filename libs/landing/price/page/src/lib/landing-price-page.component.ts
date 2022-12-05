@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { LandingPricePageApiService } from '@olympia/landing/price/api';
 import { CoachStatus, Prices } from '@olympia/landing/price/common';
 import { Observable } from 'rxjs';
@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   selector: 'olympia-landing-price-page',
   templateUrl: './landing-price-page.component.html',
   styleUrls: ['./landing-price-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingPricePageComponent {
   preloadingSkeletonCount = new Array(4);

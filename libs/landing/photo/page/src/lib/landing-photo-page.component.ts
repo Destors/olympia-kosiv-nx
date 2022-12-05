@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import {
   DRESSING_ROOM_PHOTOS,
@@ -25,6 +25,7 @@ export function getCarouselPhotos(): PhotosArrModel[] {
   selector: 'olympia-landing-photo-page',
   templateUrl: './landing-photo-page.component.html',
   styleUrls: ['./landing-photo-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingPhotoPageComponent {
   carouselPhotosArr: PhotosArrModel[];

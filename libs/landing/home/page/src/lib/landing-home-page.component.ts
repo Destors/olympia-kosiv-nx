@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { HeroImgPositionSide, HeroModel } from '@olympia/landing/home/common';
 
 import { HERO_SPORT_FOOD, HERO_TRAINER } from './data/landing-home-page.heros';
@@ -7,6 +7,7 @@ import { HERO_SPORT_FOOD, HERO_TRAINER } from './data/landing-home-page.heros';
   selector: 'olympia-landing-home-page',
   templateUrl: './landing-home-page.component.html',
   styleUrls: ['./landing-home-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LandingHomePageComponent {
   heroTrainer: HeroModel;
