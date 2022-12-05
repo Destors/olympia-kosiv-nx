@@ -39,6 +39,9 @@
       "@olympia/landing/home/ui/review": [
         "libs/landing/home/ui/review/src/index.ts"
       ],
+      "@olympia/landing/photo/common": [
+        "libs/landing/photo/common/src/index.ts"
+      ],
       "@olympia/landing/photo/page": ["libs/landing/photo/page/src/index.ts"],
       "@olympia/landing/price/api": ["libs/landing/price/api/src/index.ts"],
       "@olympia/landing/price/common": [

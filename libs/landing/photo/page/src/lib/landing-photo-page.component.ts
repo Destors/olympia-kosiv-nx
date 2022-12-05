@@ -1,25 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { PhotosArrModel } from '@olympia/landing/photo/common';
 
-import {
-  DRESSING_ROOM_PHOTOS,
-  FIGHT_ROOM_PHOTOS,
-  MAIN_ROOM_PHOTOS,
-  POWER_ROOM_PHOTOS,
-} from './data/landing-home-ui-carousels-photos.imgs';
-
-export interface PhotosArrModel {
-  title: string;
-  imgArr: string[];
-}
-
-export function getCarouselPhotos(): PhotosArrModel[] {
-  return [
-    { title: 'Головна зала', imgArr: [...MAIN_ROOM_PHOTOS] },
-    { title: 'Роздягальні та душ', imgArr: [...DRESSING_ROOM_PHOTOS] },
-    { title: 'Силова зала', imgArr: [...POWER_ROOM_PHOTOS] },
-    { title: 'Татамі та бородьба', imgArr: [...FIGHT_ROOM_PHOTOS] },
-  ];
-}
+import { getCarouselPhotos } from './data/landing-home-ui-carousels-photos.imgs';
 
 @Component({
   selector: 'olympia-landing-photo-page',
