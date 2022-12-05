@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { CoachStatus, Collection, Prices } from '@olympia/landing/price/common';
-import { map, Observable, of } from 'rxjs';
+import { map, Observable, of, shareReplay } from 'rxjs';
 
 @Injectable()
 export class LandingPricePageApiService {
@@ -13,7 +13,8 @@ export class LandingPricePageApiService {
     try {
       this.pricesArr$ = this.db
         .collection<Prices>(Collection.Landing)
-        .valueChanges();
+        .valueChanges()
+        .pipe(shareReplay(1));
     } catch (e) {
       console.warn(e);
       this.pricesArr$ = of(undefined);
