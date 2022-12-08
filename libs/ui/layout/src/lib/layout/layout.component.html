@@ -1,6 +1,6 @@
 <div
   class="mat-app-background"
-  [ngClass]="{ 'dark-theme': isDarkTheme | async }"
+  [ngClass]="{ 'dark-theme': isDarkTheme$ | async }"
 >
   <ng-container [ngSwitch]="layoutType$ | async">
     <ng-container *ngSwitchDefault>

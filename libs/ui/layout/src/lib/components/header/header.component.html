@@ -8,9 +8,11 @@
   <div class="header-wrapper">
     <b class="main-logo">Olympia Kosiv</b>
     <olympia-nav></olympia-nav>
-    <mat-slide-toggle
-      [checked]="isDarkTheme | async"
-      (change)="toggleDarkTheme($event.checked)"
-    ></mat-slide-toggle>
+    <ng-container *ngIf="{ value: isDarkTheme$ | async } as darkTheme">
+      <button mat-icon-button (click)="toggleDarkTheme(!darkTheme.value)">
+        <mat-icon
+          [svgIcon]="darkTheme.value ? 'lightModeIcon' : 'darkModeIcon'"
+        ></mat-icon></button
+    ></ng-container>
   </div>
 </header>

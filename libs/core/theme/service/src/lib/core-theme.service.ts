@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CoreThemeService {
   private _darkTheme = new BehaviorSubject(true);
-  isDarkTheme = this._darkTheme.asObservable();
+  isDarkTheme$ = this._darkTheme.asObservable();
 
   setDarkTheme(isDarkTheme: boolean) {
     this._darkTheme.next(isDarkTheme);

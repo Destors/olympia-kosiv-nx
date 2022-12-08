@@ -15,7 +15,7 @@ export class LayoutComponent implements OnInit {
 
   layoutType$!: Observable<string>;
 
-  isDarkTheme = new Observable<boolean>();
+  isDarkTheme$ = new Observable<boolean>();
 
   constructor(
     private readonly layoutService: LayoutService,
@@ -24,6 +24,6 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.layoutType$ = this.layoutService.layoutType$;
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    this.isDarkTheme$ = this.themeService.isDarkTheme$;
   }
 }
