@@ -1,6 +1,6 @@
 @use 'libs/ui/stylesheets/mixins' as store-mixins;
 
-header {
+.header-wrapper {
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -20,5 +20,31 @@ header {
     @include store-mixins.media-tablet-up() {
       display: flex;
     }
+  }
+}
+
+.extra-header {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
+  & b {
+    font-weight: 500;
+  }
+  :nth-child(-n + 2) {
+    margin-bottom: 10px;
+  }
+  @include store-mixins.media-tablet-up() {
+    :nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    flex-direction: row;
   }
 }
