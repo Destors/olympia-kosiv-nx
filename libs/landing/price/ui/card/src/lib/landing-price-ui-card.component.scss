@@ -1,8 +1,10 @@
+@use 'libs/ui/stylesheets/variables' as store;
+
 .card {
   border: 1px solid #434343;
   border-radius: 10px;
   padding: 20px 20px;
-  background-color: #282828;
+  background-color: store.$dark-bg-elevation-1;
   height: 100%;
   width: 100%;
   & .card__header {

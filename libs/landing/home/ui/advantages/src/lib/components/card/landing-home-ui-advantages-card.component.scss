@@ -1,8 +1,11 @@
+@use 'libs/ui/stylesheets/variables' as store;
+
 .card {
   border: 1px solid #434343;
   border-radius: 10px;
   padding: 20px 20px;
   height: 100%;
+  background-color: store.$dark-bg-elevation-1;
 
   & .icon {
     margin-bottom: 15px;
@@ -34,6 +37,5 @@
   & p {
     font-size: 1.2rem;
     line-height: 150%;
-
   }
 }
