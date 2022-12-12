@@ -1,6 +1,0 @@
-@use '../../../landing/home/ui/advantages/src/lib/components/card/landing-home-ui-advantages-card-theme'
-  as alert;
-
-@mixin theme($theme, $typography-config) {
-  @include alert.theme($theme, $typography-config);
-}
