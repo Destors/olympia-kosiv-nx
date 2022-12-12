@@ -1,6 +1,0 @@
-<ng-container *ngIf="{ val: isDarkTheme$ | async } as darkTheme">
-  <button mat-icon-button (click)="toggleDarkTheme(!darkTheme.val)">
-    <mat-icon
-      [svgIcon]="darkTheme.val ? 'lightModeIcon' : 'darkModeIcon'"
-    ></mat-icon></button
-></ng-container>

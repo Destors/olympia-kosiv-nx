@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { UiContainerModule } from '@olympia/ui/container';
 
 import { NavModule } from '../nav/nav.module';
-import { HeaderThemeButtonModule } from './components/theme-button/header-theme-button.module';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { HeaderComponent } from './header.component';
     CommonModule,
     UiContainerModule,
     NavModule,
-    HeaderThemeButtonModule,
     MatButtonModule,
     MatIconModule,
     FormsModule,
