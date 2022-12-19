@@ -1,17 +1,11 @@
 @use '@angular/material' as mat;
-@use './themes/light';
+
 @use './themes/dark';
 @use 'variables' as store;
-@use './typography/config' as typography;
-@use './components';
 
-@include mat.core-theme(light.$my-app-light-theme);
-@include mat.core(typography.$my-app-typography);
+@include mat.core-theme(dark.$my-app-dark-theme);
 @include mat.core();
-@include components.theme(
-  light.$my-app-light-theme,
-  typography.$my-app-typography
-);
+
 *,
 ::after,
 ::before {
@@ -31,7 +25,6 @@ body {
   height: 100%;
   font-size: 1rem;
   margin: 0;
-  color: #212121;
   font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, Lucida Grande,
     sans-serif;
 }

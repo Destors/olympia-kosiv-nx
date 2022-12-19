@@ -1,7 +1,4 @@
-<div
-  class="mat-app-background"
-  [ngClass]="{ 'dark-theme': isDarkTheme$ | async }"
->
+<div class="mat-app-background dark-theme">
   <ng-container [ngSwitch]="layoutType$ | async">
     <ng-container *ngSwitchDefault>
       <olympia-header></olympia-header>
