@@ -2,8 +2,6 @@ import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable, LOCALE_ID, Optional } from '@angular/core';
 import { Meta, MetaDefinition, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-
-import { EnvironmentService } from '@banshop/core/environments/service';
 import {
   META_CONFIG,
   META_CONFIG_DEFAULT,
@@ -11,7 +9,9 @@ import {
   META_CONFIG_OG_DEFAULT,
   MetaConfig,
   MetaConfigOg,
-} from '@banshop/core/meta/common';
+} from '@olympia/core/meta/common';
+
+import { EnvironmentService } from '@banshop/core/environments/service';
 
 @Injectable({
   providedIn: 'root',
