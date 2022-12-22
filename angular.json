@@ -2,8 +2,11 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "core-environments-service": "libs/core/environments/service",
     "core-icon": "libs/core/icon",
     "core-layout-service": "libs/core/layout/service",
+    "core-meta-common": "libs/core/meta/common",
+    "core-meta-service": "libs/core/meta/service",
     "core-navigation-common": "libs/core/navigation/common",
     "core-theme-service": "libs/core/theme/service",
     "landing-contact-page": "libs/landing/contact/page",

@@ -15,8 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@olympia/core/environments/service": [
+        "libs/core/environments/service/src/index.ts"
+      ],
       "@olympia/core/icon": ["libs/core/icon/src/index.ts"],
       "@olympia/core/layout/service": ["libs/core/layout/service/src/index.ts"],
+      "@olympia/core/meta/common": ["libs/core/meta/common/src/index.ts"],
+      "@olympia/core/meta/service": ["libs/core/meta/service/src/index.ts"],
       "@olympia/core/navigation/common": [
         "libs/core/navigation/common/src/index.ts"
       ],
