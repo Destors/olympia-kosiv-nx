@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MetaService } from '@olympia/core/meta/service';
 import { HeroImgPositionSide, HeroModel } from '@olympia/landing/home/common';
 
 import { HERO_SPORT_FOOD, HERO_TRAINER } from './data/landing-home-page.heros';
@@ -14,8 +16,12 @@ export class LandingHomePageComponent {
   heroSportFood: HeroModel;
   imgPositionSide: typeof HeroImgPositionSide = HeroImgPositionSide;
 
-  constructor() {
+  constructor(
+    private readonly activatedRoute: ActivatedRoute,
+    private readonly metaService: MetaService
+  ) {
     this.heroTrainer = HERO_TRAINER;
     this.heroSportFood = HERO_SPORT_FOOD;
+    this.metaService.update();
   }
 }
