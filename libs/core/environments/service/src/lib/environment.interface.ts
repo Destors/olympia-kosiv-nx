@@ -4,11 +4,6 @@ export interface Environments {
   production: boolean;
   brand: string;
   phone: string;
-  google?: {
-    id: string;
-    name: string;
-    key: string;
-  };
   appHost: string;
 }
 
