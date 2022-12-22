@@ -18,5 +18,5 @@ export const ENVIRONMENTS_DEFAULT: Environments = {
   production: false,
   brand: 'Olympia-Kosiv',
   phone: '+380962723719',
-  appHost: 'http://localhost',
+  appHost: 'https://olympia-kosiv.com',
 };
