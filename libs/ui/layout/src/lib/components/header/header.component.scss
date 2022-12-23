@@ -35,11 +35,10 @@
 
 .extra-header {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
-  background-color: rgb(230, 230, 230);
-  color: black;
+  background-color: #282828;
   & a {
     text-decoration: none;
     color: inherit;
