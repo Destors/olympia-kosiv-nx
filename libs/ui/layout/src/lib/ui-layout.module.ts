@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { UiContainerModule } from '@olympia/ui/container';
 
+import { FooterModule } from './components/footer/footer.module';
 import { HeaderModule } from './components/header/header.module';
 import { MenuModule } from './components/menu/menu.module';
 import { LayoutComponent } from './layout/layout.component';
@@ -14,6 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
     UiContainerModule,
     HeaderModule,
     MenuModule,
+    FooterModule,
   ],
   declarations: [LayoutComponent],
   exports: [LayoutComponent],
