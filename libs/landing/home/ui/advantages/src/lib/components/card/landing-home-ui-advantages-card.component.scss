@@ -1,7 +1,6 @@
 @use 'libs/ui/stylesheets/variables' as store;
 
 .card {
-  border: 1px solid #434343;
   border-radius: 10px;
   padding: 20px 20px;
   height: 100%;
@@ -31,11 +30,13 @@
   }
   & h3 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   & p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 150%;
+    color: store.$dark-text-secondary;
+    font-weight: 300;
   }
 }

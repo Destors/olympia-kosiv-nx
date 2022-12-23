@@ -6,5 +6,7 @@ $color-accent: mat.get-color-from-palette(mat.$pink-palette, A200);
 $color-warning: mat.get-color-from-palette(mat.$amber-palette, 500);
 $color-danger: mat.get-color-from-palette(mat.$red-palette, 900);
 
-$dark-bg-elevation-1: #282828;
+$dark-bg-elevation-1: #23262f;
 $dark-bg-primary: #141416;
+
+$dark-text-secondary: mat.get-color-from-palette(mat.$gray-palette, A400);
