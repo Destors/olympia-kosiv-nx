@@ -1,5 +1,9 @@
 @use 'libs/ui/stylesheets/mixins' as store-mixins;
 
+header {
+  border-bottom: 1px solid rgb(80, 80, 80);
+}
+
 .header-wrapper {
   display: flex;
   align-items: center;
