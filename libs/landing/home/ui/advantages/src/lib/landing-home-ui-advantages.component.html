@@ -1,10 +1,6 @@
 <ul>
   <olympia-row tablet>
-    <olympia-column
-      tablet="6"
-      web="4"
-      *ngFor="let advCardsArr of advCards"
-    >
+    <olympia-column tablet="6" web="4" *ngFor="let advCardsArr of advCards">
       <li>
         <olympia-landing-home-ui-advantages-card
           [advCards]="advCardsArr"
