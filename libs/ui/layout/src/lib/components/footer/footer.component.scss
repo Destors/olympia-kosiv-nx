@@ -1,4 +1,5 @@
 @use 'libs/ui/stylesheets/mixins' as store-mixins;
+@use 'libs/ui/stylesheets/variables' as store;
 
 .footer {
   padding: 3rem 0 6rem 0;
@@ -18,4 +19,8 @@
   olympia-column {
     margin-bottom: 10px;
   }
+}
+
+.text-secondary {
+  color: store.$dark-text-secondary;
 }

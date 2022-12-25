@@ -25,6 +25,14 @@
     }
   }
 
+  & b {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: store.$dark-text-secondary;
+  }
+
   & p {
     font-size: 1rem;
     color: white;
