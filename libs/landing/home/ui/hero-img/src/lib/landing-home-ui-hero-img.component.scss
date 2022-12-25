@@ -1,3 +1,5 @@
+@use 'libs/ui/stylesheets/variables' as store;
+
 h2 {
   font-size: 2rem;
 }
@@ -5,6 +7,7 @@ h2 {
 p {
   font-size: 1.2rem;
   line-height: 2rem;
+  color: store.$dark-text-secondary;
 }
 
 span.secondary {
@@ -20,13 +23,13 @@ olympia-column {
 olympia-column.title-left {
   order: 1;
 }
+.img-container {
+  padding: 30px 0;
+}
 
 img {
   width: 100%;
-  height: auto;
-  border-radius: 0px 80px 0px 80px;
+  height: 70%;
+  border-radius: 10px;
   margin-bottom: 20px;
-  &.title-left {
-    border-radius: 80px 0px 80px 0px;
-  }
 }

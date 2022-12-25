@@ -6,6 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { UiContainerModule } from '@olympia/ui/container';
 
 import { NavModule } from '../nav/nav.module';
+import { HeaderLogoModule } from './components/header-logo/header-logo.module';
+import { HeaderSocialModule } from './components/header-social/header-social.module';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
@@ -18,6 +20,8 @@ import { HeaderComponent } from './header.component';
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
+    HeaderLogoModule,
+    HeaderSocialModule,
   ],
   exports: [HeaderComponent],
 })

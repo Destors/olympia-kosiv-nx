@@ -1,0 +1,23 @@
+.header-social {
+  & ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  & a {
+    color: rgb(155, 155, 155);
+
+    & :hover {
+      color: white;
+    }
+  }
+
+  & mat-icon {
+    height: 24px;
+    width: 24px;
+  }
+}

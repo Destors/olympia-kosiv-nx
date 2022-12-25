@@ -1,15 +1,17 @@
 <olympia-row tablet>
   <olympia-column tablet="6">
-    <img
-      [ngSrc]="heroModel.img"
-      [ngClass]="{ 'title-left': imgPosition === 'left' }"
-      alt=""
-      width="800"
-      height="400"
-      ngSrcset="100w, 200w, 300w"
-      sizes="50vw"
-      priority
-    />
+    <div class="img-container">
+      <img
+        [ngSrc]="heroModel.img"
+        [ngClass]="{ 'title-left': imgPosition === 'left' }"
+        alt=""
+        width="800"
+        height="400"
+        ngSrcset="100w, 200w, 300w"
+        sizes="50vw"
+        priority
+      />
+    </div>
   </olympia-column>
   <olympia-column
     tablet="6"
@@ -17,6 +19,7 @@
     ><div>
       <h2>{{ heroModel.title }}</h2>
       <p [innerHTML]="heroModel.desc"></p>
+      <ng-content></ng-content>
     </div>
   </olympia-column>
 </olympia-row>

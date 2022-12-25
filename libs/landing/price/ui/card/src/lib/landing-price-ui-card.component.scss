@@ -1,12 +1,12 @@
 @use 'libs/ui/stylesheets/variables' as store;
 
 .card {
-  border: 1px solid #434343;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 40px 20px;
   background-color: store.$dark-bg-elevation-1;
   height: 100%;
   width: 100%;
+  position: relative;
   & .card__header {
     font-size: 1.5rem;
     font-weight: 700;
@@ -23,7 +23,8 @@
   }
 
   &.popular {
-    background-color: #213651;
+    background-color: store.$dark-bg-primary;
+    border: 1px solid store.$dark-bg-elevation-1;
   }
 }
 

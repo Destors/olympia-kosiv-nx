@@ -1,41 +1,33 @@
 @use 'libs/ui/stylesheets/variables' as store;
 
 .card {
-  border: 1px solid #434343;
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 40px 25px;
   height: 100%;
   background-color: store.$dark-bg-elevation-1;
 
   & .icon {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 
     & mat-icon {
-      font-size: 50px;
       height: 50px;
       width: 50px;
-      padding: auto;
-      position: relative;
-
-      & ::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 10px;
-        border: 1px solid lightgray;
-        width: 50px;
-        height: 50px;
-      }
+      background-color: rgb(132, 202, 111);
+      border-radius: 50%;
+      padding: 8px;
+      color: store.$dark-bg-primary;
     }
   }
   & h3 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 20px;
   }
 
   & p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 150%;
+    color: store.$dark-text-secondary;
+    font-weight: 300;
   }
 }

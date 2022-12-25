@@ -9,7 +9,7 @@
   background-position: center;
   background-color: darkslategrey;
   background-image: url('../../../../../../../apps/olympia-kosiv-web/src/assets/landing/img/mainHeaderDark.jpg');
-  margin-top: -70px;
+
   margin-bottom: 50px;
   & h2 {
     color: white;
@@ -23,6 +23,14 @@
     @include store-mixins.media-web() {
       font-size: 3.5rem;
     }
+  }
+
+  & b {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: store.$dark-text-secondary;
   }
 
   & p {

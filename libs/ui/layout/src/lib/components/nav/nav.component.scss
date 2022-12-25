@@ -9,6 +9,11 @@ olympia-nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 5px;
+  @include store-mixins.media-tablet-up() {
+    margin: 0 8px 0 0;
+  }
+
   & mat-icon {
     display: inline-block;
     width: 30px;
@@ -29,9 +34,11 @@ olympia-nav-link {
     font-size: 1rem;
     font-weight: 600;
     color: rgb(123, 123, 123);
+    font-weight: 500;
 
     &.is-active {
       color: inherit;
+      font-weight: 600;
     }
   }
 }

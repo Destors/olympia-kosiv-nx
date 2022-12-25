@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { CoreIconService } from '@olympia/core/icon';
+
+import { HEADER_ICONS } from './data/header.icons';
 
 @Component({
   selector: 'olympia-header',
@@ -6,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor() {}
+  constructor(private readonly iconService: CoreIconService) {
+    for (const icon of HEADER_ICONS) {
+      this.iconService.add(icon.name, icon.source);
+    }
+  }
 }
