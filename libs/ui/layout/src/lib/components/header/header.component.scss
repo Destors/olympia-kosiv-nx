@@ -25,5 +25,11 @@ header {
 
   & olympia-header-social {
     margin-left: auto;
+    @include store-mixins.media-tablet-up() {
+      display: none;
+    }
+    @include store-mixins.media-web-up() {
+      display: inline-block;
+    }
   }
 }
