@@ -1,6 +1,6 @@
 <h3>Напишіть відгук</h3>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <mat-form-field appearance="outline">
+  <mat-form-field>
     <mat-label>Ім'я</mat-label>
     <input
       type="text"
@@ -9,7 +9,7 @@
       formControlName="name"
     />
   </mat-form-field>
-  <mat-form-field appearance="outline">
+  <mat-form-field>
     <mat-label>Відгук</mat-label>
     <textarea
       type="text"
