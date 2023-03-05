@@ -36,6 +36,8 @@ export class LandingCreateFormComponent implements OnInit {
     if (this.form.valid && !this.submitted) {
       this.submitted = true;
       this.createApiService.addReview(this.form.value);
+      alert('Дякуємо, Ваш відгук відправлено.');
+      this.form.reset();
     }
     this.changeDetectorRef.markForCheck();
   }
